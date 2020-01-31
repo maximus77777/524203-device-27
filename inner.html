@@ -61,8 +61,23 @@
       </ul>
       <section class = "filter">
         <h2 class = "title-filter">Фильтр:</h2>
-        <!--Здесь будет форма-->
         <form action = "#" method = "get">
+          <fieldset class = "range-filter">
+            <legend>Стоимость</legend>
+            <div class = "scale">
+              <div class = "bar"></div>
+            </div>
+            <div class = "toggle min-toggle"></div>
+            <div class = "toggle max-toggle"></div>
+            <div class = "price-controls">
+            <label>от
+              <input class = "min-price" type="text" value = "0">
+            </label>
+            <label>до
+              <input class = "min-price" type="text" value = "5000">
+            </label>
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Цвет</legend>
             <ul>
