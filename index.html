@@ -42,15 +42,15 @@
         </li>
       </ul>
     </nav>
-    <h1 hidden>Shop Device</h1>
+    <h1 class = visually-hidden>Shop Device</h1>
     </header>
     <main class = "page-main">
       <section class = "slider">
-        <h2 hidden>Реклама</h2>
+        <h2 class = visually-hidden>Реклама</h2>
         <img class = "selfie-image" src = "img/slider-1.png" width = "384"
           height = "486" alt = "селфи">
         <article>
-          <h2 hidden>Статья</h2>
+          <h2 class = visually-hidden>Статья</h2>
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
              Восемь(Восемь, Карл!) метров и весом всего 5 килограмм.
@@ -96,7 +96,7 @@
         </ul>
       </section>
       <section class = "second-slider">
-        <h3>Услуги</h3>
+        <h3 class = visually-hidden>Услуги</h3>
         <div class="buttons-container">
           <button>Доставка</button>
           <button>Гарантия</button>
@@ -114,7 +114,7 @@
         </article>
       </section>
       <section class = "company">
-        <h3 hidden>Компания</h3>
+        <h3 class = visually-hidden>Компания</h3>
         <ul class = "list-company">
           <li class = "company-elem">
             <a href = "#">
@@ -178,7 +178,7 @@
       <div class = "container">
         <div class="logo-footer">
           <a class = "logo-device" href = "#">
-            <img  class = "logo-picture" src = "img/logo-footer.svg" width = "163"
+            <img  class = "logo-picture" src = "img/logo-main.svg" width = "163"
               height = "35" alt = "Логотип">
           </a>
         </div>
@@ -186,7 +186,7 @@
       </div>
       <div class = "container">
         <section class = "menu-footer">
-          <h2 hidden>Навигационная меню</h2>
+          <h2 class = visually-hidden>Навигационная меню</h2>
           <ul class = "list-footer">
             <li class = "elem-footer">
               <a href = "#">Доставка</a>
@@ -200,7 +200,7 @@
           </ul>
         </section>
         <section class = "social-footer">
-          <h2 hidden>Социальные сети</h2>
+          <h2 class = visually-hidden>Социальные сети</h2>
           <ul class= "social-list">
             <li class = "social-elem">
               <a class = "social-facebook" href = "#">Фейсбук</a>
@@ -216,7 +216,7 @@
       </div>
       <div class = "container">
         <section class = "second-menu">
-          <h2 hidden>Дополнительное меню подвала</h2>
+          <h2 class = visually-hidden>Дополнительное меню подвала</h2>
           <ul class = "second-list">
             <li class = "second-elem">
               <a class = "second-enter" href = "#">Войти</a>
@@ -239,5 +239,32 @@
         </div>
       </div>
     </footer>
+    <section class = "modal modal-login">
+      <h3 class = visually-hidden>Модальное окно</h3>
+      <form action = "#" method = "post">
+        <p class = "modal-form-block">
+          <label class = "form-label" for = "username"></label>
+          <input class = "input-login-user" type = "text" name = "username"
+           id = "username" placeholder = "Имя Фамилия">
+        </p>
+        <p class = "modal-form-block">
+          <label class = "form-label" for="email-user"></label>
+          <input class = "input-email-user" type = "email" name = "email"
+           id = "email-user" placeholder = "email@example.com">
+        </p>
+        <p class = "modal-form-textarea">
+          <label class = "label-textarea" for = "textmail"></label>
+          <textarea name = "textmail" id = "textmail"
+           placeholder = "В свободной форме"></textarea>
+        </p>
+        <button class = "button" type = "submit" value = "">Отправить</button>
+      </form>
+      <button class = "close-modal" value = "">Закрыть</button>
+    </section>
+    <section class = "modal modal-map">
+      <h3 class = visually-hidden>Модальное окно карты</h3>
+      <img src= "img/map-big.png" alt = "Карта">
+      <button class = "close-modal" value = "">Закрыть</button>
+    </section>
   </body>
 </html>

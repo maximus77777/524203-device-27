@@ -30,21 +30,21 @@
         </li>
       </ul>
       <nav class = "nav-menu">
-      <ul class = "nav-list">
-        <li class = "nav-elem">
-          <a class = "catalog" href = "#">Каталог товаров</a>
-        </li>
-        <li class = "nav-elem">
-          <a class = "delivery" href = "#">Доставка</a>
-        </li>
-        <li class = "nav-elem">
-          <a class = "Guarantee" href = "#">Гарантия</a>
-        </li>
-        <li>
-          <a class = "contacts" href = "#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class = "nav-list">
+          <li class = "nav-elem">
+            <a class = "catalog" href = "#">Каталог товаров</a>
+          </li>
+          <li class = "nav-elem">
+            <a class = "delivery" href = "#">Доставка</a>
+          </li>
+          <li class = "nav-elem">
+            <a class = "Guarantee" href = "#">Гарантия</a>
+          </li>
+          <li>
+            <a class = "contacts" href = "#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class = "page-main">
       <h1 class = "title-show">Моноподы для селфи</h1>
@@ -62,8 +62,56 @@
       <section class = "filter">
         <h2 class = "title-filter">Фильтр:</h2>
         <!--Здесь будет форма-->
+        <form action = "#" method = "get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input class = visually-hidden type = "checkbox"
+                  name = "black" id = "filter-black" checked>
+                <label for = "filter-black">Черный</label>
+              </li>
+              <li>
+                <input class = visually-hidden type = "checkbox"
+                  name = "filter-white" id = "filter-white">
+                <label for = "filter-white">Белый</label>
+              </li>
+              <li>
+                <input class = visually-hidden type = "checkbox"
+                  name = "filter-blue" id = "filter-blue" checked>
+                <label for = "filter-blue">Синий</label>
+              </li>
+              <li>
+                <input class = visually-hidden type = "checkbox"
+                  name = "filter-red" id = "filter-red" checked>
+                <label for = "filter-red">Красный</label>
+              </li>
+              <li>
+                <input class = visually-hidden type = "checkbox"
+                  name = "filter-pink" id = "filter-pink">
+                <label for = "filter-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input class = visually-hidden type = "radio"
+                  name = "answer-group" value = "Yes" id = "filter-yes" checked>
+                <label for = "filter-yes">Есть</label>
+              </li>
+              <li>
+                <input class = visually-hidden type = "radio"
+                  name = "answer-group" value = "No" id = "filter-no">
+                <label for = "filter-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type = "submit" value = "">Показать</button>
+        </form>
       </section>
-      <section class = "catalog">
+      <section class = "sort-catalog">
         <div class = "sort-container">
           <h2 class = "title-sort">Сортировка:</h2>
           <ul class = "sort-list">
@@ -86,40 +134,42 @@
             </li>
           </ul>
         </div>
-        <ul class = "list-catalog">
-          <li class = "catalog-elem">
-            <img class = "catalog-image" src = "img/catalog-item-1.jpg" width = "360"
-              height = "380" alt = "Любительская селфи-палка">
-            <h3>
-              <a href="#">Любительская селфи-палка</a>
-            </h3>
-            <span>500 руб.</span>
-          </li>
-          <li class = "catalog-elem">
-            <img class = "catalog-image" src = "img/catalog-item-2.jpg" width = "360"
-              height = "380" alt = "Профессиональная селфи-палка">
-            <h3>
-              <a href="#">Профессиональная селфи-палка</a>
-            </h3>
-            <span>1500 руб.</span>
-          </li>
-          <li class = "catalog-elem">
-            <img class = "catalog-image" src = "img/catalog-item-3.jpg" width = "360"
-              height = "380" alt = "Непотопляемая селфи-палка">
-            <h3>
-              <a href="#">Непотопляемая селфи-палка</a>
-            </h3>
-            <span>2500 руб.</span>
-          </li>
-          <li class = "catalog-elem">
-            <img class = "catalog-image" src = "img/catalog-item-4.jpg" width = "360"
-              height = "380" alt = "селфи-палка &#171;Следуй за мной&#187;">
-            <h3>
-              <a href="#">селфи-палка &#171;Следуй за мной&#187;</a>
-            </h3>
-            <span>4900 руб.</span>
-          </li>
-        </ul>
+        <section class = "main-catalog">
+          <ul class = "list-catalog">
+            <li class = "catalog-elem">
+              <img class = "catalog-image" src = "img/catalog-item-1.jpg" width = "360"
+                height = "380" alt = "Любительская селфи-палка">
+              <h3>
+                <a href="#">Любительская селфи-палка</a>
+              </h3>
+             <span>500 руб.</span>
+            </li>
+            <li class = "catalog-elem">
+              <img class = "catalog-image" src = "img/catalog-item-2.jpg" width = "360"
+                height = "380" alt = "Профессиональная селфи-палка">
+              <h3>
+                <a href="#">Профессиональная селфи-палка</a>
+              </h3>
+              <span>1500 руб.</span>
+            </li>
+            <li class = "catalog-elem">
+              <img class = "catalog-image" src = "img/catalog-item-3.jpg" width = "360"
+                height = "380" alt = "Непотопляемая селфи-палка">
+              <h3>
+                <a href="#">Непотопляемая селфи-палка</a>
+              </h3>
+              <span>2500 руб.</span>
+            </li>
+            <li class = "catalog-elem">
+              <img class = "catalog-image" src = "img/catalog-item-4.jpg" width = "360"
+                height = "380" alt = "селфи-палка &#171;Следуй за мной&#187;">
+              <h3>
+                <a href="#">селфи-палка &#171;Следуй за мной&#187;</a>
+              </h3>
+              <span>4900 руб.</span>
+            </li>
+          </ul>
+        </section>
         <div class = "pagination">
           <ul class = "list-pagination">
             <li class = "pagination-elem">
@@ -145,7 +195,7 @@
       <div class = "container">
         <div class="logo-footer">
           <a class = "logo-device" href = "#">
-            <img  class = "logo-picture" src = "img/logo-footer.svg" width = "163"
+            <img  class = "logo-picture" src = "img/logo-main.svg" width = "163"
               height = "35" alt = "Логотип">
           </a>
         </div>
@@ -167,7 +217,7 @@
           </ul>
         </section>
         <section class = "social-footer">
-          <h2 hidden>Социальные сети</h2>
+          <h2 class = visually-hidden>Социальные сети</h2>
           <ul class= "social-list">
             <li class = "social-elem">
               <a class = "social-facebook" href = "#">Фейсбук</a>
@@ -183,7 +233,7 @@
       </div>
       <div class = "container">
         <section class = "second-menu">
-          <h2 hidden>Дополнительное меню подвала</h2>
+          <h2 class = visually-hidden>Дополнительное меню подвала</h2>
           <ul class = "second-list">
             <li class = "second-elem">
               <a class = "second-enter" href = "#">Валентин Петухов</a>
