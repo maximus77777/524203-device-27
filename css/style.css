@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "Gilroy";
+
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
+
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
+
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgb(0,0,0);
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-image: linear-gradient(180deg, transparent 14px, #f0c52e 14px, #f0c52e 22px, transparent 22px);
+}
+
+.button:hover {
+  background-color: rgb(240, 197, 46);
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(240, 197, 46);
+}
+
+/*Header*/
+
+.link-logo:hover {
+  opacity: 0.6;
+}
+
+.link-logo:active {
+  opacity: 0.3;
+}
+
+.page-header {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.list-menu,
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Поиск по сайту*/
+
+.search-cite {
+  color: rgb(0 0 0);
+  background-color: transparent;
+  border: none;
+  border-bottom-color: #000000;
+}
+
+.search-cite::placeholder {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.search-cite:hover::placeholder {
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.search-cite::placeholder {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.search-cite:hover::placeholder {
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.search-cite:focus   {
+  color: rgb(0 0 0);
+  border-bottom: 2px solid rgb(0 0 0);
+}
+
+.search-elem {
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
+.search-elem:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.search-elem:active {
+  color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.link {
+  color:inherit;
+}
+
+.active-enter {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+  color:inherit;
+}
+
+.link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*Навигационное меню*/
+
+.link-menu {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+.link-menu:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.link-menu:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*каталог*/
+
+.title-show {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.list-show {
+  list-style: none;
+}
+
+.elem-show a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.elem-show a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.elem-show a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.list-catalog {
+  list-style: none;
+}
+
+.main-catalog a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 800;
+}
+
+.main-catalog span {
+font-family: "Gilroy", "Arial", sans-serif;
+font-size: 16px;
+line-height: 24px;
+color: rgb(70, 70, 70);
+font-weight: 300;
+}
+
+/*Фильтр*/
+
+.filter {
+  background-color: rgb(239, 239, 239);
+}
+
+.title-filter {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: rgb(219, 219, 219);
+  border-top: 2px solid rgb(0 0 0);
+}
+
+.filter fieldset {
+  border: none;
+  border-top: 2px solid rgb(0 0 0);
+}
+
+.filter legend {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 800;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.filter-input:disabled + label {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/*Сложный фильтр*/
+
+.min-price,
+.max-price {
+  background-color: transparent;
+  border: none;
+}
+
+
+/*Контакты*/
+
+.title-contacts {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.list-contacts {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  list-style: none;
+}
+
+/*Подвал*/
+
+.page-footer {
+  background-color: rgb(70, 70, 70);
+}
+
+/*Логотип подвала*/
+.main-logo {
+  width: 163px;
+  height: 35px;
+}
+
+.footer-logo {
+  fill:rgb(255, 198, 0);
+}
+
+.footer-logo:hover {
+  fill:rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo:active {
+  fill:rgba(255, 198, 0, 0.3);
+}
+
+.address,
+.telefon-elem {
+  color: rgb(255, 255, 255);
+}
+
+/*Навигационное меню подвала*/
+
+.second-list,
+.social-list,
+.list-footer {
+  list-style: none;
+}
+
+.elem-footer a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.elem-footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.elem-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*Социальные сети*/
+
+/*Дополнительное меню*/
+
+.second-enter {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.second-enter:hover {
+  color: rgb(255, 255, 255);
+}
+
+.second-enter:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.second-enter-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.second-login-active {
+  color: rgba(255, 255, 255, 0.7);
+}
