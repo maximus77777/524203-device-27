@@ -18,6 +18,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Open Sans";
+
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,7 +68,9 @@ img {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  background-image: linear-gradient(180deg, transparent 14px, #f0c52e 14px, #f0c52e 22px, transparent 22px);
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, transparent 15px, #f0c52e 15px, #f0c52e 23px, transparent 23px);
 }
 
 .button:hover {
@@ -113,6 +135,7 @@ img {
 
 .search-elem {
   color: rgb(0, 0, 0);
+  background-color: transparent;
   border: 2px solid rgb(0, 0, 0);
 }
 
@@ -185,15 +208,19 @@ img {
   list-style: none;
 }
 
-.elem-show a {
+.link-active-show {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.elem-show a:hover {
+.link-show {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.link-show:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.elem-show a:active {
+.link-show:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -231,7 +258,6 @@ font-weight: 300;
   font-weight: 800;
   text-transform: uppercase;
   background-color: rgb(219, 219, 219);
-  border-top: 2px solid rgb(0 0 0);
 }
 
 .filter fieldset {
