@@ -17,10 +17,10 @@
       </div>
       <ul class = "list-menu">
         <li class = "elem-menu">
-          <div class = "focus-search">
+          <form class = "focus-search" action = "#" method = "get">
             <input class = "search-cite" type = "search" placeholder = "Поиск по сайту">
             <input class = "search-elem" type = "submit" value = "Найти">
-          </div>
+          </form>
         </li>
         <li class = "elem-menu">
           <a class = "link enter" href = "#">Войти</a>
@@ -57,12 +57,17 @@
           height = "486" alt = "селфи">
         <article>
           <h2 class = visually-hidden>Статья</h2>
-          <p>Делай селфи, как Бен Стиллер!</p>
-          <p class = "span">Самая длинная палка для селфи доступна в нашем магазине.
+          <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
+          <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
              Восемь(Восемь, Карл!) метров и весом всего 5 килограмм.
           </p>
-          <a href = "btn">Подробнее</a>
-          <dl>
+          <a class = "button btn" href = "#">Подробнее</a>
+          <div class = "control-sliders">
+            <button class = "control-1"></button>
+            <button class = "control-2"></button>
+            <button class = "control-3"></button>
+          </div>
+          <dl class = "text-table">
             <dt>Длина палки</dt>
             <dd>8,5 м</dd>
             <dt>Вес палки</dt>
@@ -70,47 +75,42 @@
             <dt>Материал</dt>
             <dd>Карбон</dd>
           </dl>
-        <div class = "control-sliders">
-          <button class = "control-1"></button>
-          <button class = "control-2"></button>
-          <button class = "control-3"></button>
-        </div>
         </article>
       </section>
       <section class = "gadjets">
         <ul class = "list-gadjets">
           <li class = "gadjet-elem">
-            <a href = "#">Виртульная реальность</a>
-            <h3>Виртульная реальность</h3>
+            <a class= "gadjet-active" href = "#">Виртульная реальность</a>
+            <h3 class= "gadjet-active">Виртульная реальность</h3>
           </li>
           <li class = "gadjet-elem">
-            <a href = "#">Моноподы для селфи</a>
-            <h3>Моноподы для селфи</h3>
+            <a class= "gadjet-active" href = "#">Моноподы для селфи</a>
+            <h3 class= "gadjet-active">Моноподы для селфи</h3>
           </li>
           <li class = "gadjet-elem">
-            <a href = "#">Экшн-камеры</a>
-            <h3>Экшн-камеры</h3>
+            <a class= "gadjet-active" href = "#">Экшн-камеры</a>
+            <h3 class= "gadjet-active">Экшн-камеры</h3>
           </li>
           <li class = "gadjet-elem">
-            <a href = "#">Фитнес-браслеты</a>
-            <h3>Фитнес-браслеты</h3>
+            <a class= "gadjet-active" href = "#">Фитнес-браслеты</a>
+            <h3 class= "gadjet-active">Фитнес-браслеты</h3>
           </li>
           <li class = "gadjet-elem">
-            <a href = "#">Умные часы</a>
-            <h3>Умные часы</h3>
+            <a class= "gadjet-active" href = "#">Умные часы</a>
+            <h3 class= "gadjet-active">Умные часы</h3>
           </li>
           <li class = "gadjet-elem">
-            <a href = "#">Квадрокоптеры</a>
-            <h3>Квадрокоптеры</h3>
+            <a class = "gadjet-active" href = "#">Квадрокоптеры</a>
+            <h3 class= "gadjet-active">Квадрокоптеры</h3>
           </li>
         </ul>
       </section>
       <section class = "second-slider">
         <h3 class = visually-hidden>Услуги</h3>
         <div class="buttons-container">
-          <button class = "button">Доставка</button>
-          <button class = "button">Гарантия</button>
-          <button class = "button">Кредит</button>
+          <button class = "button btn-delivery">Доставка</button>
+          <button class = "button btn-warranty">Гарантия</button>
+          <button class = "button btn-сredit">Кредит</button>
         </div>
         <article>
           <h3 class = "title-delivery">Доставка</h3>
@@ -128,25 +128,25 @@
         <ul class = "list-company">
           <li class = "company-elem">
             <a href = "#">
-              <img src = "img/logo-dj.png" width = "260"
+              <img src = "img/logo-1.png" width = "260"
                 height = "100" alt = "логотип компании Dj">
             </a>
           </li>
           <li class = "company-elem">
             <a href = "#">
-              <img src = "img/logo-spgadgets.png" width = "260"
+              <img src = "img/logo-2.png" width = "260"
                 height = "100" alt = "логотип компании sp-Gadgets">
             </a>
           </li>
           <li class = "company-elem">
             <a href = "#">
-              <img src = "img/logo-gopro.png" width = "260"
+              <img src = "img/logo-3.png" width = "260"
                 height = "100" alt = "логотип компании GoPro">
             </a>
           </li>
           <li class = "company-elem">
             <a href = "#">
-              <img src = "img/logo-vive.png" width = "260"
+              <img src = "img/logo-4.png" width = "260"
                 height = "100" alt = "логотип компании vive">
             </a>
           </li>
@@ -233,10 +233,10 @@
               <a class = "second-enter" href = "#">Войти</a>
             </li>
             <li class = "second-elem">
-              <a class = "second-compare" href = "#">Сравнить</a>
+              <a class = "second-enter second-compare" href = "#">Сравнить</a>
             </li>
             <li class = "second-elem">
-              <a class = "second-cart" href = "#">Корзина</a>
+              <a class = "second-enter second-cart" href = "#">Корзина</a>
             </li>
           </ul>
         </section>
