@@ -9,279 +9,298 @@
   </head>
   <body>
     <header class = "page-header">
-      <div class = "logo-container">
-        <a class = "link-logo" href = "index.html">
-          <svg class = "main-logo"  viewBox = "0 0 163 35">
-            <g id = "logo-icon" xmlns = "http://www.w3.org/2000/svg">
-              <path id = "logo-main" d = "M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z"/>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <ul class = "list-menu">
-        <li class = "elem-menu">
-          <form class = "focus-search" action = "#" method = "get">
-            <input class = "search-cite" type = "search" placeholder = "Поиск по сайту">
-            <input class = "search-elem" type = "submit" value = "Найти">
-          </form>
-        </li>
-        <li class = "elem-menu">
-          <a class = "login-header" href = "#">Валентин Петухов</a>
-        </li>
-        <li class = "elem-menu">
-          <a class = "active-enter" href = "#">Выйти</a>
-        </li>
-        <li class = "elem-menu">
-          <a class = "link compare" href = "#">сравнить</a>
-        </li>
-        <li class = "elem-menu">
-          <a class = "link cart" href = "#">Корзина</a>
-        </li>
-      </ul>
-      <nav class = "nav-menu">
-        <ul class = "nav-list">
-          <li class = "nav-elem">
-            <a class = "link-menu catalog" href = "#">Каталог товаров</a>
-          </li>
-          <li class = "nav-elem">
-            <a class = "link-menu delivery" href = "#">Доставка</a>
-          </li>
-          <li class = "nav-elem">
-            <a class = "link-menu Guarantee" href = "#">Гарантия</a>
-          </li>
-          <li>
-            <a class = "link-menu contacts" href = "#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class = visually-hidden>Shop Device</h1>
-    </header>
-    <main class = "page-main">
-      <h1 class = "title-show">Моноподы для селфи</h1>
-      <ul class = "list-show">
-        <li class = "elem-show">
-          <a class = "link-active-show" href = "index.html">Главная</a>
-        </li>
-        <li class = "elem-show">
-          <a class = "link-show" href = "#">Каталог товаров</a>
-        </li>
-        <li class = "elem-show link-active-show">
-          Моноподы для селфи
-        </li>
-      </ul>
-      <section class = "filter">
-        <h2 class = "title-filter">Фильтр:</h2>
-        <form action = "#" method = "get">
-          <fieldset class = "range-filter">
-            <legend>Стоимость</legend>
-            <div class = "scale">
-              <div class = "bar"></div>
-            </div>
-            <div class = "toggle min-toggle"></div>
-            <div class = "toggle max-toggle"></div>
-            <div class = "price-controls">
-            <label>
-              <input class = "min-price" type="text" value = "" placeholder = "от 0">
-            </label>
-            <label>
-              <input class = "max-price" type="text" value = "" placeholder = "до 5000">
-            </label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
-                  name = "black" id = "filter-black" checked>
-                <label for = "filter-black">Черный</label>
-              </li>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
-                  name = "filter-white" id = "filter-white">
-                <label for = "filter-white">Белый</label>
-              </li>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
-                  name = "filter-blue" id = "filter-blue" checked>
-                <label for = "filter-blue">Синий</label>
-              </li>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
-                  name = "filter-red" id = "filter-red" checked>
-                <label for = "filter-red">Красный</label>
-              </li>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
-                  name = "filter-pink" id = "filter-pink">
-                <label for = "filter-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-radio" type = "radio"
-                  name = "answer-group" value = "Yes" id = "filter-yes" checked>
-                <label for = "filter-yes">Есть</label>
-              </li>
-              <li>
-                <input class = "visually-hidden filter-input filter-input-radio" type = "radio"
-                  name = "answer-group" value = "No" id = "filter-no">
-                <label for = "filter-no">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class = "button filter-button" type = "submit" value = "">Показать</button>
-        </form>
-      </section>
-      <section class = "sort-catalog">
-        <div class = "sort-container">
-          <h2 class = "title-sort">Сортировка:</h2>
-          <ul class = "sort-list">
-            <li class = "sort-elem sort-activ">
-              <a href="#">По цене</a>
-            </li>
-            <li class = "sort-elem">
-              <a href="#">По типу</a>
-            </li>
-            <li class = "sort-elem">
-              <a href="#">По популярности</a>
-            </li>
-          </ul>
-          <ul class = "arrows">
-            <li class = "arrows-elem">
-              <a href="#">Стрелка верх</a>
-            </li>
-            <li class = "arrows-elem activ">
-              <a href="#">Стрелка вниз</a>
-            </li>
-          </ul>
-        </div>
-        <section class = "main-catalog">
-          <ul class = "list-catalog">
-            <li class = "catalog-elem">
-              <img class = "catalog-image" src = "img/catalog-item-1.jpg" width = "360"
-                height = "380" alt = "Любительская селфи-палка">
-              <h3>
-                <a href="#">Любительская селфи-палка</a>
-              </h3>
-             <span>500 руб.</span>
-            </li>
-            <li class = "catalog-elem">
-              <img class = "catalog-image" src = "img/catalog-item-2.jpg" width = "360"
-                height = "380" alt = "Профессиональная селфи-палка">
-              <h3>
-                <a href="#">Профессиональная селфи-палка</a>
-              </h3>
-              <span>1500 руб.</span>
-            </li>
-            <li class = "catalog-elem">
-              <img class = "catalog-image" src = "img/catalog-item-3.jpg" width = "360"
-                height = "380" alt = "Непотопляемая селфи-палка">
-              <h3>
-                <a href="#">Непотопляемая селфи-палка</a>
-              </h3>
-              <span>2500 руб.</span>
-            </li>
-            <li class = "catalog-elem">
-              <img class = "catalog-image" src = "img/catalog-item-4.jpg" width = "360"
-                height = "380" alt = "селфи-палка &#171;Следуй за мной&#187;">
-              <h3>
-                <a href="#">селфи-палка &#171;Следуй за мной&#187;</a>
-              </h3>
-              <span>4900 руб.</span>
-            </li>
-          </ul>
-        </section>
-        <div class = "pagination">
-          <ul class = "list-pagination">
-            <li class = "pagination-elem">
-              <a class = "pagination-back" href="#">Назад</a>
-            </li>
-            <li class = "current-active">
-              <a href = "#">1</a>
-            </li>
-            <li class = "pagination-elem">
-              <a href = "#">2</a>
-            </li>
-            <li class = "pagination-elem">
-              <a href = "#">3</a>
-            </li>
-            <li class = "pagination-elem">
-              <a class = "pagination-forward" href = "#">Вперед</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class = "page-footer">
-      <div class = "container">
-        <div class="logo-footer">
-          <a class = "logo-device" href = "#">
-            <svg class= "main-logo footer-logo"  viewBox="0 0 163 35">
-              <use xlink:href = "#logo-icon" class = "logo-elem" xmlns="http://www.w3.org/2000/svg" />
+      <div class = "main-container container-header">
+        <div class = "container">
+          <a class = "link-logo" href = "index.html">
+            <svg class = "main-logo"  viewBox = "0 0 163 35">
+              <g id = "logo-icon" xmlns = "http://www.w3.org/2000/svg">
+                <path id = "logo-main" d = "M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z"/>
+              </g>
             </svg>
           </a>
+          <ul class = "list-menu">
+            <li class = "elem-menu">
+              <form class = "focus-search" action = "#" method = "get">
+                <input class = "search-cite" type = "search" placeholder = "Поиск по сайту">
+                <input class = "search-elem" type = "submit" value = "Найти">
+              </form>
+            </li>
+            <li class = "elem-menu">
+              <a class = "login-header" href = "#">Валентин Петухов</a>
+            </li>
+            <li class = "elem-menu">
+              <a class = "active-enter" href = "#">Выйти</a>
+            </li>
+            <li class = "elem-menu">
+              <a class = "link compare" href = "#">сравнить</a>
+            </li>
+            <li class = "elem-menu">
+              <a class = "link cart" href = "#">Корзина</a>
+            </li>
+          </ul>
+          <nav class = "nav-menu">
+            <ul class = "nav-list">
+              <li class = "nav-elem">
+                <a class = "link-menu catalog" href = "#">Каталог товаров</a>
+              </li>
+              <li class = "nav-elem">
+                <a class = "link-menu delivery" href = "#">Доставка</a>
+              </li>
+              <li class = "nav-elem">
+                <a class = "link-menu Guarantee" href = "#">Гарантия</a>
+              </li>
+              <li>
+                <a class = "link-menu contacts" href = "#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class = visually-hidden>Shop Device</h1>
         </div>
-        <p class = "address">г.Москва, ул. Строителей, 15</p>
       </div>
+    </header>
+    <main class = "page-main">
       <div class = "container">
-        <section class = "menu-footer">
-          <h2 class = visually-hidden>Навигационная меню</h2>
-          <ul class = "list-footer">
-            <li class = "elem-footer">
-              <a href = "#">Доставка</a>
-            </li>
-            <li class = "elem-footer">
-              <a href = "#">Гарантия</a>
-            </li>
-            <li class = "elem-footer">
-              <a href = "#">Контакты</a>
-            </li>
-          </ul>
-        </section>
-        <section class = "social-footer">
-          <h2 class = visually-hidden>Социальные сети</h2>
-          <ul class= "social-list">
-            <li class = "social-elem">
-              <a class = "social-facebook" href = "#">Фейсбук</a>
-            </li>
-            <li class = "social-elem">
-              <a class = "social-instagram" href = "#">Инстаграм</a>
-            </li>
-            <li class = "social-elem">
-              <a class = "social-twitter" href = "#">Твиттер</a>
-            </li>
-          </ul>
-        </section>
+        <h1 class = "title-show">Моноподы для селфи</h1>
+        <ul class = "list-show">
+          <li class = "elem-show">
+            <a class = "link-active-show" href = "index.html">Главная</a>
+          </li>
+          <li class = "elem-show">
+            <a class = "link-show" href = "#">Каталог товаров</a>
+          </li>
+          <li class = "elem-show link-active-show">
+            Моноподы для селфи
+          </li>
+        </ul>
       </div>
-      <div class = "container">
-        <section class = "second-menu">
-          <h2 class = visually-hidden>Дополнительное меню подвала</h2>
-          <ul class = "second-list">
-            <li class = "second-elem">
-              <a class = "second-login-active" href = "#">Валентин Петухов</a>
-            </li>
-            <li class = "second-elem ">
-              <a class = "second-enter-active" href = "#">Выйти</a>
-            </li>
-            <li class = "second-elem">
-              <a class = "second-enter second-compare" href = "#">Сравнить</a>
-            </li>
-            <li class = "second-elem">
-              <a class = "second-enter second-cart" href = "#">Корзина</a>
-            </li>
-          </ul>
-        </section>
-        <div class = "telefon">
-          <a href = "+7(495)495-95-95" class = "telefon-elem">
-            Тел:+7(495)495-95-95
-          </a>
+      <section class = "filter-sort-catalog">
+        <div class = "main-container filter-sort-container">
+          <div class = "filter-sort-grid">
+            <div class = "sort-container">
+              <h2 class = "title-filter">Фильтр:</h2>
+            </div>
+            <div class = "sort-container">
+              <h2 class = "title-sort">Сортировка:</h2>
+              <ul class = "sort-list">
+                <li class = "sort-elem sort-activ">
+                  <a href="#">По цене</a>
+                </li>
+                <li class = "sort-elem">
+                  <a href="#">По типу</a>
+                </li>
+                <li class = "sort-elem">
+                  <a href="#">По популярности</a>
+                </li>
+              </ul>
+              <ul class = "arrows">
+                <li class = "arrows-elem">
+                  <a href="#">Стрелка верх</a>
+                </li>
+                <li class = "arrows-elem activ">
+                  <a href="#">Стрелка вниз</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class = "logo-htmlacademy">
-          <a class = "htmlacademy-image" href = "https://htmlacademy.ru/intensive/htmlcss">Логотип HTMLacademy</a>
+      </section>
+      <div class = "filter-catalog-background">
+        <div class = "main-container">
+          <div class = "filter-catalog-grid">
+            <section class = "filter">
+              <h3 class = "visually-hidden">Фильтр</h3>
+              <form action = "#" method = "get">
+                <fieldset class = "range-filter">
+                  <legend>Стоимость</legend>
+                  <div class = "scale">
+                    <div class = "bar"></div>
+                  </div>
+                  <div class = "toggle min-toggle"></div>
+                  <div class = "toggle max-toggle"></div>
+                  <div class = "price-controls">
+                    <label>
+                      <input class = "min-price" type="text" value = "" placeholder = "от 0">
+                    </label>
+                    <label>
+                      <input class = "max-price" type="text" value = "" placeholder = "до 5000">
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Цвет</legend>
+                  <ul>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
+                        name = "black" id = "filter-black" checked>
+                      <label for = "filter-black">Черный</label>
+                    </li>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
+                        name = "filter-white" id = "filter-white">
+                      <label for = "filter-white">Белый</label>
+                    </li>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
+                        name = "filter-blue" id = "filter-blue" checked>
+                      <label for = "filter-blue">Синий</label>
+                    </li>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
+                        name = "filter-red" id = "filter-red" checked>
+                      <label for = "filter-red">Красный</label>
+                    </li>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-checkbox" type = "checkbox"
+                        name = "filter-pink" id = "filter-pink">
+                      <label for = "filter-pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>Bluetooth</legend>
+                  <ul>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-radio" type = "radio"
+                        name = "answer-group" value = "Yes" id = "filter-yes" checked>
+                      <label for = "filter-yes">Есть</label>
+                    </li>
+                    <li>
+                      <input class = "visually-hidden filter-input filter-input-radio" type = "radio"
+                        name = "answer-group" value = "No" id = "filter-no">
+                      <label for = "filter-no">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class = "button filter-button" type = "submit" value = "">Показать</button>
+              </form>
+            </section>
+            <section class = "main-catalog">
+              <ul class = "list-catalog">
+                <li class = "catalog-elem">
+                  <img class = "catalog-image" src = "img/catalog-item-1.jpg" width = "360"
+                    height = "380" alt = "Любительская селфи-палка">
+                  <h3 class = "card title-card">
+                    <a href="#">Любительская селфи-палка</a>
+                  </h3>
+                <span class = "card text-card">500 руб.</span>
+                </li>
+                <li class = "catalog-elem">
+                  <img class = "catalog-image" src = "img/catalog-item-2.jpg" width = "360"
+                    height = "380" alt = "Профессиональная селфи-палка">
+                  <h3 class = "card title-card">
+                    <a href="#">Профессиональная селфи-палка</a>
+                  </h3>
+                  <span class = "card text-card">1500 руб.</span>
+                </li>
+                <li class = "catalog-elem">
+                  <img class = "catalog-image" src = "img/catalog-item-3.jpg" width = "360"
+                    height = "380" alt = "Непотопляемая селфи-палка">
+                  <h3 class = "card title-card">
+                    <a href="#">Непотопляемая селфи-палка</a>
+                  </h3>
+                  <span class = "card text-card">2500 руб.</span>
+                </li>
+                <li class = "catalog-elem">
+                  <img class = "catalog-image" src = "img/catalog-item-4.jpg" width = "360"
+                    height = "380" alt = "селфи-палка &#171;Следуй за мной&#187;">
+                  <h3 class = "card title-card">
+                    <a href="#">селфи-палка &#171;Следуй за мной&#187;</a>
+                  </h3>
+                  <span class = "card text-card">4900 руб.</span>
+                </li>
+              </ul>
+              <div class = "pagination">
+                <ul class = "list-pagination">
+                  <li class = "pagination-elem">
+                    <a class = "pagination-back" href="#">Назад</a>
+                  </li>
+                  <li class = "current-active">
+                    <a href = "#">1</a>
+                  </li>
+                 <li class = "pagination-elem">
+                    <a href = "#">2</a>
+                  </li>
+                  <li class = "pagination-elem">
+                    <a href = "#">3</a>
+                  </li>
+                  <li class = "pagination-elem">
+                    <a class = "pagination-forward" href = "#">Вперед</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class = "page-footer">
+      <div class = "main-container">
+        <div class = "grid-footer">
+          <div class = "elem-container">
+            <a class = "logo-device" href = "#">
+              <svg class= "main-logo logo-footer" viewBox="0 0 163 35">
+                <use xlink:href = "#logo-icon" class = "logo-elem" xmlns="http://www.w3.org/2000/svg" />
+              </svg>
+            </a>
+            <p class = "address">г.Москва, ул. Строителей, 15</p>
+          </div>
+          <div class = "elem-container Services-social-container">
+            <section class = "menu-footer">
+              <h2 class = visually-hidden>Навигационная меню</h2>
+              <ul class = "list-footer">
+                <li class = "elem-footer">
+                  <a href = "#">Доставка</a>
+                </li>
+                <li class = "elem-footer">
+                  <a href = "#">Гарантия</a>
+                </li>
+                <li class = "elem-footer">
+                  <a href = "#">Контакты</a>
+                </li>
+              </ul>
+            </section>
+            <section class = "social-footer">
+              <h2 class = visually-hidden>Социальные сети</h2>
+              <ul class= "social-list">
+                <li class = "social-elem">
+                  <a class = "social-facebook" href = "#">Фейсбук</a>
+                </li>
+                <li class = "social-elem">
+                  <a class = "social-instagram" href = "#">Инстаграм</a>
+                </li>
+                <li class = "social-elem">
+                  <a class = "social-twitter" href = "#">Твиттер</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class = "elem-container">
+            <section class = "second-menu">
+              <h2 class = visually-hidden>Дополнительное меню подвала</h2>
+              <ul class = "second-list">
+                <li class = "second-elem">
+                  <a class = "second-login-active" href = "#">Валентин Петухов</a>
+                </li>
+                <li class = "second-elem ">
+                  <a class = "second-enter-active" href = "#">Выйти</a>
+                </li>
+                <li class = "second-elem">
+                  <a class = "second-enter second-compare" href = "#">Сравнить</a>
+                </li>
+                <li class = "second-elem">
+                  <a class = "second-enter second-cart" href = "#">Корзина</a>
+                </li>
+              </ul>
+            </section>
+            <div class = "telefon">
+              <a href = "+7(495)495-95-95" class = "telefon-elem">
+                Тел:+7(495)495-95-95
+              </a>
+            </div>
+            <div class = "logo-htmlacademy">
+              <a class = "htmlacademy-image" href = "https://htmlacademy.ru/intensive/htmlcss">Логотип HTMLacademy</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
