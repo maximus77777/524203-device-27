@@ -194,6 +194,16 @@ img {
   border: 2px solid rgb(0, 0, 0);
 }
 
+.search-elem {
+  visibility: hidden;
+ }
+
+ .elem-menu:focus > label {
+   visibility: visible;
+ }
+
+
+
 .link {
   color:inherit;
 }
@@ -214,10 +224,6 @@ img {
 .link:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
-
-
-
 
 /*Навигационное меню*/
 
@@ -240,8 +246,12 @@ img {
 }
 
 /*слайдер*/
-
 .slider {
+  margin-bottom: 106px;
+}
+
+
+.slider-container {
   background-image: linear-gradient(to bottom, rgba(240, 197, 46, 0.5) 113px, rgba(240, 197, 46, 0.5) 113px, transparent 113px, transparent 486px);
 }
 
@@ -256,22 +266,48 @@ img {
   color: rgb(70, 70, 70);
 }
 
-.text-table dd {
+.text-value td {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
 }
 
-.text-table dt {
+.text-product td {
   font-size: 13px;
   line-height: 20px;
 }
 
+.grid-slider {
+  display: flex;
+}
+
+.selfie-image {
+  margin-right: 120px;
+}
+
 /*Гаджеты*/
 
+.gadjets {
+  margin-bottom: 82px;
+}
+
 .list-gadjets {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.gadjet-elem {
+  width: 160px;
+  min-height: 240px;
+  margin-right: 40px;
+}
+
+.gadjet-elem:nth-child(6n) {
+  margin-right: 0px;
 }
 
 .list-gadjets h3 {
@@ -293,9 +329,16 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+
+
 /*Дополнительный слайдер*/
 
 .second-slider {
+  margin-bottom: 94px;
+}
+
+.background-second-slider {
+  min-height: 288px;
   background-image: linear-gradient(180deg, transparent, transparent 100px, rgb(229, 229, 229) 100px, rgb(229, 229, 229) 288px);
 }
 
@@ -314,14 +357,36 @@ img {
   font-weight: 800;
 }
 
+.grid-second-slider {
+  display: flex;
+}
+
 /*Логотипы компаний*/
 
+.company {
+  margin-bottom: 93px;
+}
+
 .list-company {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .company-elem a {
   opacity: 0.2;
+}
+
+.company-elem {
+  width: 260px;
+  min-height: 100px;
+  margin-right: 40px;
+}
+
+.company-elem:nth-child(4) {
+  margin-right: 0;
 }
 
 /*Контакты*/
