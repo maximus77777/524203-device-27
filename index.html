@@ -18,15 +18,15 @@
           <ul class = "list-menu">
             <li class = "elem-menu">
               <form class = "focus-search" action = "#" method = "get">
-                <label for = "cite-1"><input class = "search-link search-cite" id = "cite-1" type = "search" placeholder = "Поиск по сайту"></label>
-                <label for = "cite-2"><input class = "search-link search-elem" id = "cite-2" type = "submit" value = "Найти"></label>
+                  <input class = "search-input search-cite" type = "search" placeholder = "Поиск по сайту">
+                  <input class = "search-btn search-elem" type = "submit" value = "Найти">
               </form>
             </li>
             <li class = "elem-menu">
               <a class = "link enter" href = "#">Войти</a>
             </li>
             <li class = "elem-menu">
-              <a class = "link compare" href = "#">сравнить</a>
+              <a class = "link compare" href = "#">Сравнить</a>
             </li>
             <li class = "elem-menu">
               <a class = "link cart" href = "#">Корзина</a>
@@ -36,6 +36,30 @@
             <ul class = "nav-list">
               <li class = "nav-elem">
                 <a class = "link-menu catalog" href = "#">Каталог товаров</a>
+                <ul class = "submenu submenu-grid">
+                  <li>
+                    <a href = "#">Виртуальная реальность</a>
+                    <ul>
+                      <li>
+                        <a href = "#">Моноподы для селфи</a>
+                      </li>
+                      <li>
+                        <a href = "#">Экшн-камеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href = "#">Фитнес-браслеты</a>
+                    <ul>
+                      <li>
+                        <a href = "#">Умные часы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href = "#">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </li>
               <li class = "nav-elem">
                 <a class = "link-menu delivery" href = "#">Доставка</a>
@@ -44,7 +68,7 @@
                 <a class = "link-menu Guarantee" href = "#">Гарантия</a>
               </li>
               <li>
-                <a class = "link-menu contacts" href = "#">Контакты</a>
+                <a class = "link-menu menu-contacts" href = "#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -53,161 +77,171 @@
       </div>
     </header>
     <main class = "page-main">
-      <section class = "slider">
-        <div class = "main-container slider-container">
-          <div class = "container">
-            <div class = "grid-slider">
-              <h2 class = visually-hidden>Реклама</h2>
-              <img class = "selfie-image" src = "img/slider-1.png" width = "384"
-                height = "486" alt = "селфи">
-              <article>
-                <h2 class = visually-hidden>Статья</h2>
-                <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
-                <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь(Восемь, Карл!) метров и весом всего 5 килограмм.
-                </p>
-                <a class = "button btn" href = "#">Подробнее</a>
-                <div class = "control-sliders">
-                  <button class = "control-1"></button>
-                  <button class = "control-2"></button>
-                  <button class = "control-3"></button>
-                </div>
-                <table class = "text-table">
-                  <tr class = "text-value">
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr class = "text-product">
-                    <td>Длина палки</td>
-                    <td>Вес палки</td>
-                    <td>Материал</td>
-                  </tr>
-                </table>
-              </article>
+      <div class = "padding-container">
+        <section class = "slider">
+          <div class = "main-container slider-container">
+            <div class = "container">
+              <div class = "grid-slider">
+                <h2 class = visually-hidden>Реклама</h2>
+                <img class = "selfie-image" src = "img/slider-1.png" width = "384"
+                  height = "486" alt = "селфи">
+                <article  class = "content-article">
+                  <h2 class = visually-hidden>Статья</h2>
+                  <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
+                  <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                  </p>
+                  <a class = "button btn-slider control-button-grid" href = "#">Подробнее</a>
+                  <div class = "control-sliders control-button-grid">
+                    <input class = "visually-hidden button-input-radio" type="radio" name = "button" id = "control-1" checked>
+                    <input class = "visually-hidden button-input-radio" type="radio" name = "button" id = "control-2">
+                    <input class = "visually-hidden button-input-radio" type="radio" name = "button" id = "control-3">
+                    <label for = "control-1"></label>
+                    <label for = "control-2"></label>
+                    <label for = "control-3"></label>
+                  </div>
+                  <table class = "text-table">
+                    <tr class = "text-value">
+                      <td>8,5 м</td>
+                      <td>5 кг</td>
+                      <td>Карбон</td>
+                    </tr>
+                    <tr class = "text-product">
+                      <td>Длина палки</td>
+                      <td>Вес палки</td>
+                      <td>Материал</td>
+                    </tr>
+                  </table>
+                </article>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class = "gadjets">
-        <div class = "main-container">
-          <ul class = "list-gadjets">
-            <li class = "gadjet-elem">
-              <a class= "gadjet-active" href = "#">Виртульная реальность</a>
-              <h3 class= "gadjet-active">Виртульная реальность</h3>
-            </li>
-            <li class = "gadjet-elem">
-              <a class= "gadjet-active" href = "#">Моноподы для селфи</a>
-              <h3 class= "gadjet-active">Моноподы для селфи</h3>
-            </li>
-            <li class = "gadjet-elem">
-              <a class= "gadjet-active" href = "#">Экшн-камеры</a>
-              <h3 class= "gadjet-active">Экшн-камеры</h3>
-            </li>
-            <li class = "gadjet-elem">
-              <a class= "gadjet-active" href = "#">Фитнес-браслеты</a>
-              <h3 class= "gadjet-active">Фитнес-браслеты</h3>
-            </li>
-            <li class = "gadjet-elem">
-              <a class= "gadjet-active" href = "#">Умные часы</a>
-              <h3 class= "gadjet-active">Умные часы</h3>
-            </li>
-            <li class = "gadjet-elem">
-              <a class = "gadjet-active" href = "#">Квадрокоптеры</a>
-              <h3 class= "gadjet-active">Квадрокоптеры</h3>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        <section class = "gadgets">
+          <div class = "main-container">
+            <ul class = "list-gadgets">
+              <li class = "gadget-elem">
+                <a class= "gadget-active gadget-content" href = "#">Виртульная реальность</a>
+                <h3 class= "gadget-active">Виртульная реальность</h3>
+              </li>
+              <li class = "gadget-elem">
+                <a class= "gadget-active gadget-content" href = "#">Моноподы для селфи</a>
+                <h3 class= "gadget-active">Моноподы для селфи</h3>
+              </li>
+              <li class = "gadget-elem">
+                <a class= "gadget-active gadget-content" href = "#">Экшн-камеры</a>
+                <h3 class= "gadget-active">Экшн-камеры</h3>
+              </li>
+              <li class = "gadget-elem">
+                <a class= "gadget-active gadget-content" href = "#">Фитнес-браслеты</a>
+                <h3 class= "gadget-active">Фитнес-браслеты</h3>
+              </li>
+              <li class = "gadget-elem">
+                <a class= "gadget-active gadget-content" href = "#">Умные часы</a>
+                <h3 class= "gadget-active">Умные часы</h3>
+              </li>
+              <li class = "gadget-elem">
+                <a class = "gadget-active gadget-content" href = "#">Квадрокоптеры</a>
+                <h3 class= "gadget-active">Квадрокоптеры</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <section class = "second-slider">
         <div class = "background-second-slider">
-          <div class = "main-container">
-            <div class = "grid-second-slider">
-              <h3 class = visually-hidden>Услуги</h3>
-              <div class="buttons-container">
-                <button class = "button btn-delivery">Доставка</button>
-                <button class = "button btn-warranty">Гарантия</button>
-                <button class = "button btn-сredit">Кредит</button>
-              </div>
-              <article>
-                <h3 class = "title-delivery">Доставка</h3>
-                <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему
-                  подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем,
-                  поднимая его на ваш этаж.
-                </p>
-              </article>
-              <div>
-                <img src = "img/delivery.svg" width = "136" height = "164" alt="Доставка до подъезда">
+          <div class = "padding-container">
+            <div class = "main-container">
+              <div class = "grid-second-slider">
+                <h3 class = visually-hidden>Услуги</h3>
+                <div class="buttons-container">
+                  <input class = "visually-hidden input-btn-delivery" type = "radio" name = "second-button" id = "delivery" checked>
+                  <input class = "visually-hidden input-btn-warranty" type = "radio" name = "second-button" id = "warranty">
+                  <input class = "visually-hidden input-btn-сredit" type = "radio" name = "second-button" id = "сredit">
+                  <label class = "button" for="delivery">Доставка</label>
+                  <label class = "button" for="warranty">Гарантия</label>
+                  <label class = "button" for="сredit">Кредит</label>
+                </div>
+                <article class = "content-services">
+                  <h3 class = "title-delivery">Доставка</h3>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо к вашему
+                    подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                    поднимая его на ваш этаж.
+                  </p>
+                </article>
+                <div class = "picture-services">доставка</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class = "company">
-        <div class = "main-container">
-          <h3 class = visually-hidden>Виды логотипов Компаний</h3>
-          <ul class = "list-company">
-            <li class = "company-elem">
-              <a href = "#">
-                <img src = "img/logo-1.png" width = "260"
-                  height = "100" alt = "логотип компании Dj">
-              </a>
-            </li>
-            <li class = "company-elem">
-              <a href = "#">
-                <img src = "img/logo-2.png" width = "260"
-                  height = "100" alt = "логотип компании sp-Gadgets">
-              </a>
-            </li>
-            <li class = "company-elem">
-              <a href = "#">
-                <img src = "img/logo-3.png" width = "260"
-                  height = "100" alt = "логотип компании GoPro">
-              </a>
-            </li>
-            <li class = "company-elem">
-              <a href = "#">
-                <img src = "img/logo-4.png" width = "260"
-                  height = "100" alt = "логотип компании vive">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <div class = "main-container contacts-container">
-        <div class = "grid-contacts">
-          <section class = "about-us">
-            <h2 class = "title-contacts">О нас</h2>
-            <p class = "text-contacts">
-              Огромный выбор гаджетов не оставит равнодушным гика,
-              который есть в каждом из нас.
-            </p>
-            <p class = "text-contacts">
-              Мы можем доставить ваш товар в самые отдаленные точки России!
-              Device работает со многими транспортными компаниями:
-            </p>
-            <ul class = "list-contacts">
-              <li class = "elem-contacts">Деловые Линии</li>
-              <li class = "elem-contacts">Автотрейдинг</li>
-              <li class = "elem-contacts">ЖелДорЭкспедиция</li>
+      <div class = "padding-container">
+        <section class = "company">
+          <div class = "main-container">
+            <h3 class = visually-hidden>Виды логотипов Компаний</h3>
+            <ul class = "list-company">
+              <li class = "company-elem">
+                <a href = "#">
+                  <img src = "img/logo-1.png" width = "260"
+                    height = "100" alt = "логотип компании Dj">
+                </a>
+              </li>
+              <li class = "company-elem">
+                <a href = "#">
+                  <img src = "img/logo-2.png" width = "260"
+                    height = "100" alt = "логотип компании sp-Gadgets">
+                </a>
+              </li>
+              <li class = "company-elem">
+                <a href = "#">
+                  <img src = "img/logo-3.png" width = "260"
+                    height = "100" alt = "логотип компании GoPro">
+                </a>
+              </li>
+              <li class = "company-elem">
+                <a href = "#">
+                  <img src = "img/logo-4.png" width = "260"
+                    height = "100" alt = "логотип компании vive">
+                </a>
+              </li>
             </ul>
-            <a class = "button" href = "#">Подробнее о нас</a>
-          </section>
-          <section class = "contacts">
-            <h2 class = "title-contacts">Контакты</h2>
-            <p class = "text-contacts">
-              Вы можете забрать товар сами, заехав в наш офис. Заодно,
-              вы сможете проверить работоспособность покупки. Всякое бывает.
-            </p>
-            <figure class = "map">
-              <a href = "#">
-                <img class = "map-image" src = "img/map.png" width = "560"
-                  height = "222" alt="Карта">
-              </a>
-            </figure>
-            <button class = "button btn-contacts">Напишите нам!</button>
-          </section>
+          </div>
+        </section>
+        <div class = "main-container contacts-container">
+          <div class = "grid-contacts">
+            <section class = "about-us">
+              <h2 class = "title-contacts">О нас</h2>
+              <p class = "text-contacts">
+                Огромный выбор гаджетов не оставит равнодушным гика,
+                который есть в каждом из нас.
+              </p>
+              <p class = "text-contacts">
+                Мы можем доставить ваш товар в самые отдаленные точки России!
+                Device работает со многими транспортными компаниями:
+              </p>
+              <ul class = "list-contacts">
+                <li class = "elem-contacts">Деловые Линии</li>
+                <li class = "elem-contacts">Автотрейдинг</li>
+                <li class = "elem-contacts">ЖелДорЭкспедиция</li>
+              </ul>
+              <a class = "button btn-about-us" href = "#">Подробнее о нас</a>
+            </section>
+            <section class = "contacts">
+              <h2 class = "title-contacts">Контакты</h2>
+              <p class = "text-contacts">
+                Вы можете забрать товар сами, заехав в наш офис. Заодно,
+                вы сможете проверить работоспособность покупки. Всякое бывает.
+              </p>
+              <figure class = "map">
+                <a href = "#">
+                  <img class = "map-image" src = "img/map.png" width = "560"
+                    height = "222" alt="Карта">
+                </a>
+              </figure>
+              <button class = "button btn-contacts">Напишите нам</button>
+            </section>
+          </div>
         </div>
       </div>
     </main>
@@ -220,9 +254,9 @@
                 <use xlink:href = "#logo-main" class = "logo-elem" xmlns="http://www.w3.org/2000/svg" />
               </svg>
             </a>
-            <p class = "address">г.Москва, ул. Строителей, 15</p>
+            <p class = "address">г .Москва, ул. Строителей, 15</p>
           </div>
-          <div class = "elem-container Services-social-container">
+          <div class = "Services-social-container">
             <section class = "menu-footer">
               <h2 class = visually-hidden>Навигационная меню</h2>
               <ul class = "list-footer">
@@ -241,13 +275,43 @@
               <h2 class = visually-hidden>Социальные сети</h2>
               <ul class= "social-list">
                 <li class = "social-elem">
-                  <a class = "social-facebook" href = "#">Фейсбук</a>
+                  <a class = "social-facebook" href = "#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
+	                    v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
+                    </svg>
+                  </a>
                 </li>
                 <li class = "social-elem">
-                  <a class = "social-instagram" href = "#">Инстаграм</a>
+                  <a class = "social-instagram" href = "#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                      <g>
+	                      <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+	                        h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+	                      <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+		                      c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+	                      <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+	                      <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+		                      M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+		                      h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+                      </g>
+                    </svg>
+                  </a>
                 </li>
                 <li class = "social-elem">
-                  <a class = "social-twitter" href = "#">Твиттер</a>
+                  <a class = "social-twitter" href = "#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" >
+                      <g>
+                        <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+                          M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
+                          c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
+                          c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643
+                          c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643
+                          c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685
+                          c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
+                      </g>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -258,18 +322,38 @@
               <ul class = "second-list">
                 <li class = "second-elem">
                   <a class = "second-enter" href = "#">Войти</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="12px" viewBox="0 0 13 12">
+                    <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+                      C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+                  </svg>
                 </li>
                 <li class = "second-elem">
                   <a class = "second-enter second-compare" href = "#">Сравнить</a>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10">
+                    <rect x="8" y="2" width="1.984" height="8"/>
+                    <rect y="3" width="1.984" height="7"/>
+                    <rect x="4" width="2" height="10"/>
+                  </svg>
                 </li>
                 <li class = "second-elem">
                   <a class = "second-enter second-cart" href = "#">Корзина</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12">
+                    <g>
+                      <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+                        c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+                        c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+                        c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+                      <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+                        c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+                        C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+                    </g>
+                  </svg>
                 </li>
               </ul>
             </section>
             <div class = "telefon">
               <a href = "+7(495)495-95-95" class = "telefon-elem">
-                Тел:+7(495)495-95-95
+                Тел: +7 (495) 495-95-95
               </a>
             </div>
             <div class = "logo-htmlacademy">
