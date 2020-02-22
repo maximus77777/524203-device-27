@@ -18,8 +18,8 @@
           <ul class = "list-menu">
             <li class = "elem-menu">
               <form class = "focus-search" action = "#" method = "get">
-                  <input class = "search-input search-cite" type = "search" placeholder = "Поиск по сайту">
-                  <input class = "search-btn search-elem" type = "submit" value = "Найти">
+                  <input class = "search-grid search-cite" type = "search" placeholder = "Поиск по сайту">
+                  <input class = "search-grid search-elem" type = "submit" value = "Найти">
               </form>
             </li>
             <li class = "elem-menu">
@@ -107,41 +107,88 @@
         <section class = "slider">
           <div class = "main-container slider-container">
             <div class = "container">
-              <div class = "grid-slider">
                 <h2 class = visually-hidden>Реклама</h2>
-                <img class = "selfie-image" src = "img/slider-1.png" width = "384"
-                  height = "486" alt = "селфи">
-                <article  class = "content-article">
-                  <h2 class = visually-hidden>Статья</h2>
-                  <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
-                  <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                  </p>
-                  <a class = "button btn-slider control-button-grid" href = "#">Подробнее</a>
-                  <div class = "control-sliders control-button-grid">
-                    <input class = "visually-hidden button-input-radio" type="radio" name = "button" id = "control-1" checked>
-                    <input class = "visually-hidden button-input-radio" type="radio" name = "button" id = "control-2">
-                    <input class = "visually-hidden button-input-radio" type="radio" name = "button" id = "control-3">
-                    <label for = "control-1"></label>
-                    <label for = "control-2"></label>
-                    <label for = "control-3"></label>
+                <article class = "content-article">
+                  <h2 class = "visually-hidden">Статья</h2>
+                <div class = "grid-slider">
+                  <div class = "slide-container">
+                  <input class = "visually-hidden" type="radio" name = "button" id = "control-1" checked>
+                  <input class = "visually-hidden" type="radio" name = "button" id = "control-2" >
+                  <input class = "visually-hidden" type="radio" name = "button" id = "control-3">
+                  <div class = "slide-images">
+                    <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Селфи">
+                    <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет">
+                    <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Квадрокоптер">
                   </div>
-                  <table class = "text-table">
-                    <tr class = "text-value">
-                      <td>8,5 м</td>
-                      <td>5 кг</td>
-                      <td>Карбон</td>
-                    </tr>
-                    <tr class = "text-product">
-                      <td>Длина палки</td>
-                      <td>Вес палки</td>
-                      <td>Материал</td>
-                    </tr>
-                  </table>
+                    <ul class = "slide-list">
+                      <li class = "slide-elem">
+                        <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
+                        <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
+                          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                        </p>
+                      </li>
+                      <li class = "slide-elem">
+                        <p class = "slider-title">Худеем правильно!</p>
+                        <p class = "slider-text"> Мотивирующие фитнес-браслеты помогут найти в себе силы
+                          не пропускать занятия и соблюдать диету.
+                        </p>
+                      </li>
+                      <li class = "slide-elem">
+                        <p class = "slider-title">Порхает как бабочка, жалит как пчела!</p>
+                        <p class = "slider-text"> Этот обычный, на первый взгляд, квадрокоптер оснащен
+                          мощным лазером, замаскированным под стандартную камеру.
+                        </p>
+                      </li>
+                    </ul>
+                    <a class = "button btn-slider control-button-grid" href = "#">Подробнее</a>
+                    <div class = "control-sliders control-button-grid">
+                      <label class = "slider-controls-item--1" for = "control-1"></label>
+                      <label class = "slider-controls-item--2" for = "control-2"></label>
+                      <label class = "slider-controls-item--3" for = "control-3"></label>
+                    </div>
+                    <ul class = "slide-list-table">
+                      <li class = "slide-elem-table">
+                        <table class = "text-table">
+                          <tr class = "text-value">
+                            <td>8,5 м</td>
+                            <td>5 кг</td>
+                            <td>Карбон</td>
+                          </tr>
+                          <tr class = "text-product">
+                            <td>Длина палки</td>
+                            <td>Вес палки</td>
+                            <td>Материал</td>
+                          </tr>
+                        </table>
+                      </li>
+                      <li class = "slide-elem-table">
+                        <table class = "text-table">
+                          <tr class = "text-value">
+                            <td>48 часов</td>
+                          </tr>
+                          <tr class = "text-product">
+                            <td>Без подзарядки</td>
+                          </tr>
+                        </table>
+                      </li>
+                      <li class = "slide-elem-table">
+                        <table class = "text-table">
+                          <tr class = "text-value">
+                            <td>800 м</td>
+                            <td>50 м</td>
+                        </tr>
+                        <tr class = "text-product">
+                            <td>Дальность полета</td>
+                            <td>Радиус поражения</td>
+                        </tr>
+                        </table>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 </article>
               </div>
             </div>
-          </div>
         </section>
         <section class = "gadgets">
           <div class = "main-container">
@@ -180,21 +227,41 @@
             <div class = "main-container">
               <div class = "grid-second-slider">
                 <h3 class = visually-hidden>Услуги</h3>
-                <div class="buttons-container">
-                  <input class = "visually-hidden input-btn-delivery" type = "radio" name = "second-button" id = "delivery" checked>
-                  <input class = "visually-hidden input-btn-warranty" type = "radio" name = "second-button" id = "warranty">
-                  <input class = "visually-hidden input-btn-сredit" type = "radio" name = "second-button" id = "сredit">
-                  <label class = "button" for="delivery">Доставка</label>
-                  <label class = "button" for="warranty">Гарантия</label>
-                  <label class = "button" for="сredit">Кредит</label>
-                </div>
                 <article class = "content-services">
-                  <h3 class = "title-delivery">Доставка</h3>
-                  <p>
-                    Мы с удовольствием доставим ваш товар прямо к вашему
-                    подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-                    поднимая его на ваш этаж.
-                  </p>
+                  <input class = "visually-hidden" type = "radio" name = "second-button" id = "delivery" checked>
+                  <input class = "visually-hidden" type = "radio" name = "second-button" id = "warranty">
+                  <input class = "visually-hidden" type = "radio" name = "second-button" id = "сredit">
+                  <div class="buttons-container">
+                    <label class = "button toggle-item-1" for = "delivery">Доставка</label>
+                    <label class = "button toggle-item-2" for = "warranty">Гарантия</label>
+                    <label class = "button toggle-item-3" for = "сredit">Кредит</label>
+                  </div>
+                  <ul class = "list-second-slide">
+                    <li class = "elem-second-slide">
+                      <h3 class = "title-second-slide">Доставка</h3>
+                      <p>
+                        Мы с удовольствием доставим ваш товар прямо к вашему
+                        подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                        поднимая его на ваш этаж.
+                      </p>
+                    </li>
+                    <li class = "elem-second-slide">
+                      <h3 class = "title-second-slide">Гарантия</h3>
+                      <p>
+                        Если из-за возгорания купленного у нас товара у вас сгорит
+                         дом — не переживайте, мы выдадим вам новый.<br>
+                        Товар, не дом, конечно же.
+                      </p>
+                    </li>
+                    <li class = "elem-second-slide">
+                      <h3 class = "title-second-slide">Кредит</h3>
+                      <p>
+                        Залезть в долговую яму стало проще! Кредитные консультанты
+                         подберут для вас наиболее выгодные условия кредита.
+                          Выгодные для нашего банка, разумеется.
+                      </p>
+                    </li>
+                  </ul>
                 </article>
               </div>
             </div>
@@ -208,25 +275,25 @@
             <ul class = "list-company">
               <li class = "company-elem">
                 <a href = "#">
-                  <img src = "img/logo-1.png" width = "260"
+                  <img src = "img/logo-dj.png" width = "260"
                     height = "100" alt = "логотип компании Dj">
                 </a>
               </li>
               <li class = "company-elem">
                 <a href = "#">
-                  <img src = "img/logo-2.png" width = "260"
+                  <img src = "img/logo-spgadgets.png" width = "260"
                     height = "100" alt = "логотип компании sp-Gadgets">
                 </a>
               </li>
               <li class = "company-elem">
                 <a href = "#">
-                  <img src = "img/logo-3.png" width = "260"
+                  <img src = "img/logo-gopro.png" width = "260"
                     height = "100" alt = "логотип компании GoPro">
                 </a>
               </li>
               <li class = "company-elem">
                 <a href = "#">
-                  <img src = "img/logo-4.png" width = "260"
+                  <img src = "img/logo-vive.png" width = "260"
                     height = "100" alt = "логотип компании vive">
                 </a>
               </li>
