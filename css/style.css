@@ -176,11 +176,13 @@ input[type="radio"].visually-hidden {
 
 .search-cite {
   width: 351px;
+  height: 34px;
   padding-left: 40px;
   font: inherit;
   color: inherit;
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid transparent;
 }
 
 .search-grid {
@@ -191,6 +193,7 @@ input[type="radio"].visually-hidden {
 
 .search-cite:focus {
   width: 351px;
+  height: 34px;
   padding-left: 40px;
   padding-right: 36px;
   outline: none;
@@ -957,12 +960,54 @@ padding-bottom: 7px;
 }
 
 .company-elem a {
-  filter: grayscale(1);
+  position: relative;
+}
+
+.company-elem a:hover::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background-image: url("../img/logo-dj.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.company-elem:nth-child(2) a:hover::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background-image: url("../img/logo-spgadgets.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.company-elem:nth-child(3) a:hover::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background-image: url("../img/logo-gopro.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.company-elem:nth-child(4) a:hover::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background-image: url("../img/logo-vive.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.company-elem a {
   opacity: 0.2;
 }
 
 .company-elem a:hover {
-  filter: grayscale(0);
   opacity: 1;
 }
 
@@ -1979,6 +2024,134 @@ input[type = "number"]::placeholder,
 }
 
 /*Модальное окно*/
+
 .modal {
-  display:none;
+  position: fixed;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 100px 20px rgba(0, 0, 0, 0.2);
+  z-index: 20;
 }
+
+.modal-login {
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  min-height: 533px;
+  margin-top: -280px;
+  margin-left: -480px;
+  padding: 78px 100px 94px;
+}
+
+.modal-login form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-login p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-login label {
+  margin-bottom: 10px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.modal-login input[type = "text"],
+.modal-login input[type = "email"] {
+  width: 360px;
+  min-height: 50px;
+  margin-bottom: 33px;
+  padding-left: 20px;
+  font: inherit;
+  color: inherit;
+  background-color: rgba(229, 229, 229, 0.5);
+  border: none;
+}
+
+input[type = "text"] {
+  margin-right: 40px;
+}
+
+.modal-form-textarea textarea {
+  width: 760px;
+  min-height: 156px;
+  margin-bottom: 41px;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  font: inherit;
+  color: inherit;
+  background-color: rgba(229, 229, 229, 0.5);
+  border: none;
+}
+
+.modal-login input::placeholder,
+.modal-form-textarea textarea::placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-login input[type = "text"]:hover,
+.modal-login input[type = "email"]:hover,
+.modal-form-textarea textarea:hover {
+  background-color: rgba(230, 230, 230, 0.8);
+}
+
+.modal-login input[type = "text"]:focus,
+.modal-login input[type = "email"]:focus,
+.modal-form-textarea textarea:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid rgb(247, 226, 150);
+}
+
+.btn-size {
+  width: 200px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  z-index: 21;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  opacity: 1;
+}
+
+.close-modal:active {
+  opacity: 0.3;
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 559px;
+  margin-top: -280px;
+  margin-left: -480px;
+
+}
+
+.modal {
+  display: none;
+}
+
