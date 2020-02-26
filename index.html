@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel = "stylesheet" href = "css/normalize.css">
-    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/min-style.css">
   </head>
   <body>
     <header class = "page-header">
       <div class = "main-container container-header">
         <div class = "container">
-          <svg class = "main-logo"  viewBox = "0 0 163 35">
+          <svg class = "main-logo" width = "163" height = "35" viewBox = "0 0 163 35">
             <g id = "logo-icon" xmlns = "http://www.w3.org/2000/svg">
-              <path id = "logo-main" d = "M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z"/>
+              <path d = "M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z"/>
             </g>
           </svg>
           <ul class = "list-menu">
             <li class = "elem-menu">
               <form class = "focus-search" action = "#" method = "get">
-                  <input class = "search-grid search-cite" type = "search" placeholder = "Поиск по сайту">
-                  <input class = "search-grid search-elem" type = "submit" value = "Найти">
+                  <input class = "search-grid search-cite" type = "search" placeholder = "Поиск по сайту" aria-label = "Форма поиск">
+                  <input class = "search-grid search-elem" type = "submit" value = "Найти" aria-label = "Кнопка найти">
               </form>
             </li>
             <li class = "elem-menu">
-              <a class = "link enter" href = "#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="12px" viewBox="0 0 13 12">
+              <a class = "link enter" href = "login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
                   <path id = "main-enter" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
                     C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
                 </svg>
@@ -33,7 +33,7 @@
             </li>
             <li class = "elem-menu">
               <a class = "link compare" href = "#">
-                <svg id = "main-compare" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 10 10">
+                <svg id = "main-compare" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                   <rect x="8" y="2" width="1.984" height="8"/>
                   <rect y="3" width="1.984" height="7"/>
                   <rect x="4" width="2" height="10"/>
@@ -43,7 +43,7 @@
             </li>
             <li class = "elem-menu">
               <a class = "link cart" href = "#">
-                <svg id= "main-cart" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12">
+                <svg id= "main-cart" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                   <g>
                     <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
                       c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
@@ -64,26 +64,26 @@
                 <a class = "link-menu catalog" href = "#">Каталог товаров</a>
                 <ul class = "submenu submenu-grid">
                   <li>
-                    <a href = "#">Виртуальная реальность</a>
+                    <a href = "inner.html">Виртуальная реальность</a>
                     <ul>
                       <li>
-                        <a href = "#">Моноподы для селфи</a>
+                        <a href = "inner.html">Моноподы для селфи</a>
                       </li>
                       <li>
-                        <a href = "#">Экшн-камеры</a>
+                        <a href = "inner.html">Экшн-камеры</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href = "#">Фитнес-браслеты</a>
+                    <a href = "inner.html">Фитнес-браслеты</a>
                     <ul>
                       <li>
-                        <a href = "#">Умные часы</a>
+                        <a href = "inner.html">Умные часы</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href = "#">Квадрокоптеры</a>
+                    <a href = "inner.html">Квадрокоптеры</a>
                   </li>
                 </ul>
               </li>
@@ -107,19 +107,19 @@
         <section class = "slider">
           <div class = "main-container slider-container">
             <div class = "container">
-                <h2 class = visually-hidden>Реклама</h2>
-                <article class = "content-article">
-                  <h2 class = "visually-hidden">Статья</h2>
+              <h2 class = visually-hidden>Реклама</h2>
+              <article class = "content-article">
+                <h2 class = "visually-hidden">Статья</h2>
                 <div class = "grid-slider">
                   <div class = "slide-container">
-                  <input class = "visually-hidden" type="radio" name = "button" id = "control-1" checked>
-                  <input class = "visually-hidden" type="radio" name = "button" id = "control-2" >
-                  <input class = "visually-hidden" type="radio" name = "button" id = "control-3">
-                  <div class = "slide-images">
-                    <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Селфи">
-                    <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет">
-                    <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Квадрокоптер">
-                  </div>
+                    <input class = "visually-hidden" type = "radio" name = "button" id = "control-1" checked>
+                    <input class = "visually-hidden" type = "radio" name = "button" id = "control-2">
+                    <input class = "visually-hidden" type = "radio" name = "button" id = "control-3">
+                    <div class = "slide-images">
+                      <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Современная палка селфи">
+                      <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет для похудения">
+                      <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Бесшумный квадрокоптер оснащен лазером">
+                    </div>
                     <ul class = "slide-list">
                       <li class = "slide-elem">
                         <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
@@ -176,45 +176,45 @@
                           <tr class = "text-value">
                             <td>800 м</td>
                             <td>50 м</td>
-                        </tr>
-                        <tr class = "text-product">
+                          </tr>
+                          <tr class = "text-product">
                             <td>Дальность полета</td>
                             <td>Радиус поражения</td>
-                        </tr>
+                          </tr>
                         </table>
                       </li>
                     </ul>
                   </div>
                 </div>
-                </article>
-              </div>
+              </article>
             </div>
+          </div>
         </section>
         <section class = "gadgets">
           <div class = "main-container">
             <ul class = "list-gadgets">
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "#">Виртульная реальность</a>
+                <a class= "gadget-active gadget-content" href = "inner.html">Виртульная реальность</a>
                 <h3 class= "gadget-active">Виртульная реальность</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "#">Моноподы для селфи</a>
+                <a class= "gadget-active gadget-content" href = "inner.html">Моноподы для селфи</a>
                 <h3 class= "gadget-active">Моноподы для селфи</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "#">Экшн-камеры</a>
+                <a class= "gadget-active gadget-content" href = "inner.html">Экшн-камеры</a>
                 <h3 class= "gadget-active">Экшн-камеры</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "#">Фитнес-браслеты</a>
+                <a class= "gadget-active gadget-content" href = "inner.html">Фитнес-браслеты</a>
                 <h3 class= "gadget-active">Фитнес-браслеты</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "#">Умные часы</a>
+                <a class= "gadget-active gadget-content" href = "inner.html">Умные часы</a>
                 <h3 class= "gadget-active">Умные часы</h3>
               </li>
               <li class = "gadget-elem">
-                <a class = "gadget-active gadget-content" href = "#">Квадрокоптеры</a>
+                <a class = "gadget-active gadget-content" href = "inner.html">Квадрокоптеры</a>
                 <h3 class= "gadget-active">Квадрокоптеры</h3>
               </li>
             </ul>
@@ -310,7 +310,7 @@
               </p>
               <p class = "text-contacts">
                 Мы можем доставить ваш товар в самые отдаленные точки России!
-                Device работает со многими транспортными компаниями:
+                DEVICE работает со многими транспортными компаниями:
               </p>
               <ul class = "list-contacts">
                 <li class = "elem-contacts">Деловые Линии</li>
@@ -328,10 +328,10 @@
               <figure class = "map">
                 <a href = "#">
                   <img class = "map-image" src = "img/map.png" width = "560"
-                    height = "222" alt="Карта">
+                    height = "222" alt = "Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 </a>
               </figure>
-              <button class = "button btn-contacts">Напишите нам</button>
+              <button class = "button btn-contacts" type = "button">Напишите нам</button>
             </section>
           </div>
         </div>
@@ -342,8 +342,8 @@
         <div class = "grid-footer">
           <div class = "elem-container">
             <a class = "logo-device" href = "#">
-              <svg class= "main-logo logo-footer"  viewBox="0 0 163 35">
-                <use xlink:href = "#logo-main" class = "logo-elem" xmlns="http://www.w3.org/2000/svg" />
+              <svg class= "main-logo logo-footer" width = "163" height = "35" viewBox="0 0 163 35">
+                <use xlink:href = "#logo-icon" class = "logo-elem" xmlns="http://www.w3.org/2000/svg" />
               </svg>
             </a>
             <p class = "address">г .Москва, ул. Строителей, 15</p>
@@ -367,16 +367,16 @@
               <h2 class = visually-hidden>Социальные сети</h2>
               <ul class= "social-list">
                 <li class = "social-elem">
-                  <a class = "social-facebook" href = "#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                  <a class = "social-facebook" href = "#" aria-label = "Фейсбук">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                       <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
 	                    v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
                     </svg>
                   </a>
                 </li>
                 <li class = "social-elem">
-                  <a class = "social-instagram" href = "#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+                  <a class = "social-instagram" href = "#" aria-label = "Инстаграм">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                       <g>
 	                      <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
 	                        h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
@@ -391,8 +391,8 @@
                   </a>
                 </li>
                 <li class = "social-elem">
-                  <a class = "social-twitter" href = "#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" >
+                  <a class = "social-twitter" href = "#" aria-label = "Твиттер">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                       <g>
                         <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
                           M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
@@ -413,8 +413,8 @@
               <h2 class = visually-hidden>Дополнительное меню подвала</h2>
               <ul class = "second-list">
                 <li class = "second-elem">
-                  <a class = "second-enter" href = "#">
-                    <svg width="13px" height="12px" viewBox="0 0 13 12">
+                  <a class = "second-enter" href = "login.html">
+                    <svg width = "13" height = "12" viewBox="0 0 13 12">
                       <use xlink:href = "#main-enter" xmlns="http://www.w3.org/2000/svg" />
                     </svg>
                     <span>Войти</span>
@@ -422,7 +422,7 @@
                 </li>
                 <li class = "second-elem">
                   <a class = "second-enter second-compare" href = "#">
-                    <svg width="10px" height="10px" viewBox="0 0 10 10">
+                    <svg width = "10" height = "10" viewBox="0 0 10 10">
                       <use xlink:href = "#main-compare" xmlns="http://www.w3.org/2000/svg" />
                     </svg>
                     <span>Сравнить</span>
@@ -430,7 +430,7 @@
                 </li>
                 <li class = "second-elem second-cart">
                   <a class = "second-enter second-cart" href = "#">
-                    <svg width="12px" height="12px" viewBox="0 0 12 12">
+                    <svg width = "12" height = "12" viewBox="0 0 12 12">
                       <use xlink:href = "#main-cart" xmlns="http://www.w3.org/2000/svg" />
                     </svg>
                     <span>Корзина</span>
@@ -439,7 +439,7 @@
               </ul>
             </section>
             <div class = "telefon">
-              <a href = "+7(495)495-95-95" class = "telefon-elem">
+              <a href = "tel:+74954959595" class = "telefon-elem">
                 Тел.: +7 (495) 495-95-95
               </a>
             </div>
@@ -459,7 +459,7 @@
            id = "username" placeholder = "Имя Фамилия">
         </p>
         <p class = "modal-form-block">
-          <label class = "form-label" for="email-user">Ваш e-mail:</label>
+          <label class = "form-label" for = "email-user">Ваш e-mail:</label>
           <input class = "input-email-user" type = "email" name = "email"
            id = "email-user" placeholder = "email@example.com">
         </p>
@@ -468,15 +468,18 @@
           <textarea name = "textmail" id = "textmail"
            placeholder = "В свободной форме"></textarea>
         </p>
-        <button class = "button btn-size" type = "submit" value = "">Отправить</button>
+        <button class = "button btn-size" type = "submit">Отправить</button>
       </form>
-      <button class = "close-modal" value = "">Закрыть</button>
+      <button class = "close-modal" type = "button">Закрыть</button>
     </section>
     <section class = "modal modal-map">
       <h3 class = visually-hidden>Модальное окно карты</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width = "960" height = "559" allowfullscreen></iframe>
       <img src= "img/map-big.png" width="960" height="559"
-       alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button class = "close-modal" value = "">Закрыть</button>
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class = "close-modal" type = "button">Закрыть</button>
     </section>
+    <script src="js/min-popup.js"></script>
+    <script src="js/min-map.js"></script>
   </body>
 </html>
