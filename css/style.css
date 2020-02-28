@@ -209,6 +209,8 @@ cursor: default;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid transparent;
+
+  cursor: default;
 }
 
 .search-grid {
@@ -316,6 +318,8 @@ cursor: default;
 
   background-color: transparent;
   border: 2px solid rgb(0, 0, 0);
+
+  cursor: default;
 }
 
 .search-elem:hover {
@@ -395,16 +399,18 @@ cursor: default;
   color:inherit;
 }
 
+.login-header:hover,
 .link:hover {
   color: rgba(0, 0, 0, 0.6);
 
-  opacity: 0.6;
+  fill-opacity: 0.6;
 }
 
+.login-header:active,
 .link:active {
   color: rgba(0, 0, 0, 0.3);
 
-  opacity: 0.3;
+  fill-opacity: 0.3;
 }
 
 /*Навигационное меню*/
@@ -1123,7 +1129,7 @@ padding-bottom: 7px;
   margin-right: 40px;
 }
 
-.company-elem:nth-child(4) {
+.company-elem:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1288,7 +1294,11 @@ padding-bottom: 7px;
 .map {
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 69px;
+}
+
+.map-image {
+  vertical-align: bottom;
 }
 
 .btn-contacts {
@@ -1488,6 +1498,19 @@ padding-bottom: 7px;
 .card {
   display: flex;
   justify-content: space-between;
+}
+
+.title-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  width: 78px;
 }
 
 .main-catalog a {
@@ -2143,7 +2166,7 @@ padding-bottom: 7px;
 
 .list-footer {
   display: flex;
-
+  flex-wrap: wrap;
   padding-top: 134px;
   padding-left: 6px;
   margin-bottom: 59px;
@@ -2153,7 +2176,7 @@ padding-bottom: 7px;
   margin-right: 30px;
 }
 
-.elem-footer:nth-child(3) {
+.elem-footer:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -2171,7 +2194,7 @@ padding-bottom: 7px;
   margin-bottom: 22px;
 }
 
-.social-elem:nth-child(3) {
+.social-elem:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -2196,39 +2219,9 @@ padding-bottom: 7px;
 
 /*Дополнительное меню*/
 
-.second-enter {
-  color: rgba(255, 255, 255, 0.7);
-
-  fill: rgb(255, 198, 0);
-}
-
-.second-login-active {
-  fill: rgb(255, 198, 0);
-}
-
-.second-enter:hover {
-  color: rgb(255, 255, 255);
-
-  fill-opacity: 0.6;
-}
-
-.second-enter:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  fill-opacity: 0.3;
-}
-
-.second-enter-active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.second-login-active {
-  color: rgba(255, 255, 255, 0.7);
-  word-spacing: 2px;
-}
-
 .second-list {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
 
   padding-top: 63px;
@@ -2241,6 +2234,8 @@ padding-bottom: 7px;
 
   top: 63px;
   left: -118px;
+
+  z-index: 1;
 }
 
 .second-active-elem svg {
@@ -2253,7 +2248,7 @@ padding-bottom: 7px;
   margin-right: 0;
 }
 
-.second-elem:nth-child(3) a {
+.second-elem:nth-child(3n) a {
   margin-right: 0;
 }
 
@@ -2284,6 +2279,39 @@ padding-bottom: 7px;
 
 .second-enter-active {
   margin-left: 60px;
+}
+
+.second-login-active {
+  color: rgba(255, 255, 255, 0.7);
+  word-spacing: 2px;
+}
+
+.second-enter {
+  color: rgba(255, 255, 255, 0.7);
+
+  fill: rgb(255, 198, 0);
+}
+
+.second-login-active {
+  fill: rgb(255, 198, 0);
+}
+
+.second-login-active:hover,
+.second-enter:hover {
+  color: rgb(255, 255, 255);
+
+  fill-opacity: 0.6;
+}
+
+.second-login-active:active,
+.second-enter:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  fill-opacity: 0.3;
+}
+
+.second-enter-active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .telefon {
