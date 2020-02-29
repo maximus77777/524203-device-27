@@ -2073,7 +2073,7 @@ padding-bottom: 7px;
 }
 
 .elem-container {
-  width: 360px;
+  width: 340px;
 }
 
 .elem-container:nth-child(1) {
@@ -2085,7 +2085,7 @@ padding-bottom: 7px;
 }
 
 .Services-social-container {
-  width: 440px;
+  width: 480px;
 }
 
 /*Логотип подвала*/
@@ -2167,14 +2167,14 @@ padding-bottom: 7px;
 .list-footer {
   display: flex;
   flex-wrap: wrap;
+
+  padding-left: 26px;
   padding-top: 134px;
-  padding-left: 6px;
   margin-bottom: 59px;
 }
 
 .elem-footer {
-  width: 121px;
-  margin-right: 28px;
+  margin-right: 30px;
 }
 
 .elem-footer:nth-child(3n) {
@@ -2187,7 +2187,7 @@ padding-bottom: 7px;
   display: flex;
   flex-wrap: wrap;
 
-  padding-left: 150px;
+  padding-left: 170px;
 }
 
 .social-elem {
@@ -2234,7 +2234,7 @@ padding-bottom: 7px;
   position: absolute;
 
   top: 63px;
-  left: -118px;
+  left: -137px;
 
   z-index: 1;
 }
@@ -2254,7 +2254,7 @@ padding-bottom: 7px;
 }
 
 .second-elem .second-enter {
-  margin-left: 35px;
+  margin-left: 15px;
 }
 
 .second-elem .second-compare {
@@ -2279,7 +2279,7 @@ padding-bottom: 7px;
 }
 
 .second-enter-active {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .second-login-active {
@@ -2316,7 +2316,7 @@ padding-bottom: 7px;
 }
 
 .telefon {
-  margin-left: 197px;
+  margin-left: 175px;
   margin-bottom: 61px;
 
   word-spacing: 1px;
@@ -2324,7 +2324,7 @@ padding-bottom: 7px;
 }
 
 .logo-htmlacademy {
-  margin-left: 334px;
+  margin-left: 314px;
 }
 
 .htmlacademy-image {
