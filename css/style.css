@@ -2173,7 +2173,8 @@ padding-bottom: 7px;
 }
 
 .elem-footer {
-  margin-right: 30px;
+  width: 121px;
+  margin-right: 28px;
 }
 
 .elem-footer:nth-child(3n) {
