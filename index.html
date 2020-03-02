@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel = "stylesheet" href = "css/normalize.css">
-    <link rel = "stylesheet" href = "css/min-style.css">
+    <link rel = "stylesheet" href = "css/style.css">
   </head>
   <body>
     <header class = "page-header">
@@ -100,7 +100,7 @@
               </li>
             </ul>
           </nav>
-          <h1 class = visually-hidden>Shop Device</h1>
+          <h1 class = visually-hidden>Магазин Девайс</h1>
         </div>
       </div>
     </header>
@@ -108,116 +108,113 @@
       <div class = "padding-container">
         <section class = "slider">
           <div class = "main-container slider-container">
-            <div class = "container">
-              <h2 class = visually-hidden>Реклама</h2>
-              <article class = "content-article">
-                <h2 class = "visually-hidden">Статья</h2>
-                <div class = "grid-slider">
-                  <div class = "slide-container">
-                    <input class = "visually-hidden" type = "radio" name = "button" id = "control-1" checked>
-                    <input class = "visually-hidden" type = "radio" name = "button" id = "control-2">
-                    <input class = "visually-hidden" type = "radio" name = "button" id = "control-3">
-                    <div class = "slide-images">
-                      <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Современная палка селфи">
-                      <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет для похудения">
-                      <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Бесшумный квадрокоптер оснащен лазером">
-                    </div>
-                    <ul class = "slide-list">
-                      <li class = "slide-elem">
-                        <p class = "slider-title">Делай селфи, как Бен Стиллер!</p>
-                        <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
-                          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                        </p>
-                      </li>
-                      <li class = "slide-elem">
-                        <p class = "slider-title">Худеем правильно!</p>
-                        <p class = "slider-text"> Мотивирующие фитнес-браслеты помогут найти в себе силы
-                          не пропускать занятия и соблюдать диету.
-                        </p>
-                      </li>
-                      <li class = "slide-elem">
-                        <p class = "slider-title">Порхает как бабочка, жалит как пчела!</p>
-                        <p class = "slider-text"> Этот обычный, на первый взгляд, квадрокоптер оснащен
-                          мощным лазером, замаскированным под стандартную камеру.
-                        </p>
-                      </li>
-                    </ul>
-                    <a class = "button btn-slider control-button-grid" href = "#">Подробнее</a>
-                    <div class = "control-sliders control-button-grid">
-                      <label class = "slider-controls-item--1" for = "control-1">Первый</label>
-                      <label class = "slider-controls-item--2" for = "control-2">Второй</label>
-                      <label class = "slider-controls-item--3" for = "control-3">Третий</label>
-                    </div>
-                    <ul class = "slide-list-table">
-                      <li class = "slide-elem-table">
-                        <table class = "text-table">
-                          <tr class = "text-value">
-                            <td>8,5 м</td>
-                            <td>5 кг</td>
-                            <td>Карбон</td>
-                          </tr>
-                          <tr class = "text-product">
-                            <td>Длина палки</td>
-                            <td>Вес палки</td>
-                            <td>Материал</td>
-                          </tr>
-                        </table>
-                      </li>
-                      <li class = "slide-elem-table">
-                        <table class = "text-table">
-                          <tr class = "text-value">
-                            <td>48 часов</td>
-                          </tr>
-                          <tr class = "text-product">
-                            <td>Без подзарядки</td>
-                          </tr>
-                        </table>
-                      </li>
-                      <li class = "slide-elem-table">
-                        <table class = "text-table">
-                          <tr class = "text-value">
-                            <td>800 м</td>
-                            <td>50 м</td>
-                          </tr>
-                          <tr class = "text-product">
-                            <td>Дальность полета</td>
-                            <td>Радиус поражения</td>
-                          </tr>
-                        </table>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
+            <h2 class = visually-hidden>Реклама</h2>
+            <input class = "visually-hidden" type = "radio" name = "button" id = "control-1" checked>
+            <input class = "visually-hidden" type = "radio" name = "button" id = "control-2">
+            <input class = "visually-hidden" type = "radio" name = "button" id = "control-3">
+            <div class = "control-sliders">
+              <label class = "slider-controls-item--1" for = "control-1">Первый</label>
+              <label class = "slider-controls-item--2" for = "control-2">Второй</label>
+              <label class = "slider-controls-item--3" for = "control-3">Третий</label>
             </div>
+            <ul class = "slide-list">
+              <li class = "slide-elem">
+                <div class = " grid-slider">
+                  <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Современная палка селфи">
+                  <article class = "slide-info">
+                    <h2 class = "visually-hidden">Статья</h2>
+                    <b class = "slider-title">Делай селфи, как Бен Стиллер!</b>
+                    <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
+                      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                    <a class = "button btn-slider" href = "#">Подробнее</a>
+                    <table class = "text-table">
+                      <tr class = "text-value">
+                        <td>8,5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                      </tr>
+                      <tr class = "text-product">
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+              </li>
+              <li class = "slide-elem">
+                <div class = " grid-slider">
+                  <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет для похудения">
+                  <article class = "slide-info">
+                    <h2 class = "visually-hidden">Статья</h2>
+                    <b class = "slider-title">Худеем правильно!</b>
+                    <p class = "slider-text"> Мотивирующие фитнес-браслеты помогут найти в себе силы
+                      не пропускать занятия и соблюдать диету.
+                    </p>
+                    <a class = "button btn-slider" href = "#">Подробнее</a>
+                    <table class = "text-table">
+                      <tr class = "text-value">
+                        <td>48 часов</td>
+                      </tr>
+                      <tr class = "text-product">
+                        <td>Без подзарядки</td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+              </li>
+              <li class = "slide-elem">
+                <div class = " grid-slider">
+                  <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Бесшумный квадрокоптер оснащен лазером">
+                  <article class = "slide-info">
+                    <h2 class = "visually-hidden">Статья</h2>
+                    <b class = "slider-title">Порхает как бабочка, жалит как пчела!</b>
+                    <p class = "slider-text"> Этот обычный, на первый взгляд, квадрокоптер оснащен
+                      мощным лазером, замаскированным под стандартную камеру.
+                    </p>
+                    <a class = "button btn-slider" href = "#">Подробнее</a>
+                    <table class = "text-table">
+                      <tr class = "text-value">
+                        <td>800 м</td>
+                        <td>50 м</td>
+                      </tr>
+                      <tr class = "text-product">
+                        <td>Дальность полета</td>
+                        <td>Радиус поражения</td>
+                      </tr>
+                    </table>
+                  </article>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
         <section class = "gadgets">
           <div class = "main-container">
             <ul class = "list-gadgets">
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "inner.html">Виртульная реальность</a>
-                <h3 class= "gadget-active">Виртульная реальность</h3>
+                <a href = "inner.html">Виртульная реальность</a>
+                <h3>Виртульная реальность</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "inner.html">Моноподы для селфи</a>
-                <h3 class= "gadget-active">Моноподы для селфи</h3>
+                <a href = "inner.html">Моноподы для селфи</a>
+                <h3>Моноподы для селфи</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "inner.html">Экшн-камеры</a>
-                <h3 class= "gadget-active">Экшн-камеры</h3>
+                <a href = "inner.html">Экшн-камеры</a>
+                <h3>Экшн-камеры</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "inner.html">Фитнес-браслеты</a>
-                <h3 class= "gadget-active">Фитнес-браслеты</h3>
+                <a href = "inner.html">Фитнес-браслеты</a>
+                <h3>Фитнес-браслеты</h3>
               </li>
               <li class = "gadget-elem">
-                <a class= "gadget-active gadget-content" href = "inner.html">Умные часы</a>
-                <h3 class= "gadget-active">Умные часы</h3>
+                <a href = "inner.html">Умные часы</a>
+                <h3>Умные часы</h3>
               </li>
               <li class = "gadget-elem">
-                <a class = "gadget-active gadget-content" href = "inner.html">Квадрокоптеры</a>
-                <h3 class= "gadget-active">Квадрокоптеры</h3>
+                <a href = "inner.html">Квадрокоптеры</a>
+                <h3>Квадрокоптеры</h3>
               </li>
             </ul>
           </div>
@@ -229,7 +226,7 @@
             <div class = "main-container">
               <div class = "grid-second-slider">
                 <h3 class = visually-hidden>Услуги</h3>
-                <article class = "content-services">
+                <div class = "content-services">
                   <input class = "visually-hidden" type = "radio" name = "second-button" id = "delivery" checked>
                   <input class = "visually-hidden" type = "radio" name = "second-button" id = "warranty">
                   <input class = "visually-hidden" type = "radio" name = "second-button" id = "сredit">
@@ -264,7 +261,7 @@
                       </p>
                     </li>
                   </ul>
-                </article>
+                </div>
               </div>
             </div>
           </div>
