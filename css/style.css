@@ -199,7 +199,7 @@ cursor: default;
 }
 
 .search-cite {
-  width: 351px;
+  width: 348px;
   height: 34px;
   padding-left: 40px;
 
@@ -222,7 +222,7 @@ cursor: default;
 }
 
 .search-cite:focus {
-  width: 351px;
+  width: 348px;
   height: 34px;
   padding-left: 40px;
   padding-right: 36px;
@@ -753,7 +753,7 @@ padding-bottom: 7px;
 /*Гаджеты*/
 
 .gadgets {
-  margin-bottom: 38px;
+  margin-bottom: 49px;
 }
 
 .list-gadgets {
@@ -770,33 +770,32 @@ padding-bottom: 7px;
   width: 160px;
   min-height: 240px;
   margin-right: 40px;
+  margin-bottom: 30px;
 }
 
 .gadget-elem:nth-child(6n) {
   margin-right: 0;
 }
 
-.list-gadgets a {
-  display: block;
+.gadget-elem a {
+  display: flex;
+  align-items: flex-end;
   position: relative;
 
   width: 160px;
-  height: 250px;
-  margin-bottom: 33px;
+  height: 242px;
+
+  background-image: linear-gradient(to bottom,rgba(240, 197, 46, 0.5) 160px, transparent 160px);
 }
 
-.list-gadgets span {
-  display: block;
-  font-size: 0;
-
-  width: 160px;
-  height: 160px;
-  margin-bottom: 34px;
-
-  background-color: rgba(240, 197, 46, 0.5);
+.gadget-elem:nth-child(3) a,
+.gadget-elem:nth-child(4) a,
+.gadget-elem:nth-child(5) a,
+.gadget-elem:nth-child(6) a {
+  height: 218px;
 }
 
-.list-gadgets h3 {
+.gadget-elem span {
   margin: 0;
   padding: 0;
 
@@ -807,20 +806,24 @@ padding-bottom: 7px;
   color: rgb(0, 0, 0);
 }
 
-.gadget-elem a:hover > span {
-  background-color: rgb(240, 197, 46);
+.gadget-elem:nth-child(2) span {
+  width: 100px;
 }
 
-.gadget-elem a:active > span:before,
-.gadget-elem a:active > h3 {
+.gadget-elem a:hover {
+  background-image: linear-gradient(to bottom,rgba(240, 197, 46) 160px, transparent 160px);
+}
+
+.gadget-elem a:active > span,
+.gadget-elem a:active::before {
   opacity: 0.3;
 }
 
-.gadget-elem span::before {
+.gadget-elem a::before {
   content: "";
   position: absolute;
 
-  top: 51px;
+  top: 52px;
   left: 31px;
   width: 97px;
   height: 55px;
@@ -830,8 +833,8 @@ padding-bottom: 7px;
   background-position: 0 0;
 }
 
-.gadget-elem:nth-child(2) span::before {
-  top: 40px;
+.gadget-elem:nth-child(2) a::before {
+  top: 41px;
   left: 38px;
   width: 86px;
   height: 117px;
@@ -839,8 +842,8 @@ padding-bottom: 7px;
   background-image: url("../img/popular-2.svg");
 }
 
-.gadget-elem:nth-child(3) span::before {
-  top: 37px;
+.gadget-elem:nth-child(3) a::before {
+  top: 38px;
   left: 49px;
   width: 71px;
   height: 87px;
@@ -848,8 +851,8 @@ padding-bottom: 7px;
   background-image: url("../img/popular-3.svg");
 }
 
-.gadget-elem:nth-child(4) span::before {
-  top: 49px;
+.gadget-elem:nth-child(4) a::before {
+  top: 50px;
   left: 29px;
   width: 107px;
   height: 65px;
@@ -857,8 +860,8 @@ padding-bottom: 7px;
   background-image: url("../img/popular-4.svg");
 }
 
-.gadget-elem:nth-child(5) span::before {
-  top: 31px;
+.gadget-elem:nth-child(5) a::before {
+  top: 32px;
   left: 56px;
   width: 56px;
   height: 98px;
@@ -866,17 +869,13 @@ padding-bottom: 7px;
   background-image: url("../img/popular-5.svg");
 }
 
-.gadget-elem:nth-child(6) span::before {
-  top: 48px;
+.gadget-elem:nth-child(6) a::before {
+  top: 49px;
   left: 13px;
   width: 132px;
   height: 69px;
 
   background-image: url("../img/popular-6.svg");
-}
-
-.gadget-elem:nth-child(2) h3 {
-  width: 100px;
 }
 
 /*Дополнительный слайдер*/
@@ -1222,6 +1221,7 @@ padding-bottom: 7px;
 
 .filter-catalog-grid {
   display: flex;
+  justify-content: space-between;
 }
 
 .list-show {
@@ -1282,6 +1282,7 @@ padding-bottom: 7px;
 .list-catalog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   width: 760px;
   margin: 0;
@@ -1323,11 +1324,6 @@ padding-bottom: 7px;
 
 .catalog-elem:nth-child(4) .check {
   visibility: visible;
-}
-
-.list-catalog .catalog-elem:nth-child(2n) {
-  margin-left: 40px;
-  margin-right: 0;
 }
 
 .list-catalog .catalog-elem:nth-last-child(1),
@@ -1805,10 +1801,9 @@ padding-bottom: 7px;
 }
 
 .filter {
-  flex-shrink: 0;
 
   width: 328px;
-  margin-right: 72px;
+  padding-left: 60px;
 
   background-color: rgb(239, 239, 239);
 }
@@ -1817,7 +1812,6 @@ padding-bottom: 7px;
   width: 201px;
   margin: 0;
   padding: 0;
-  margin-left: 60px;
   margin-top: 69px;
 
   border: none;
@@ -1945,7 +1939,6 @@ padding-bottom: 7px;
 .filter-button {
   width: 200px;
   margin-top: 32px;
-  margin-left: 59px;
 }
 
 /*Подвал*/
@@ -2216,30 +2209,16 @@ padding-bottom: 7px;
   margin-left: 314px;
 }
 
-.htmlacademy-image {
-  position: relative;
-
-  font-size: 0;
+.logo-htmlacademy a {
+  fill: rgb(255, 198, 0);
 }
 
-.htmlacademy-image::before {
-  content: "";
-  position: absolute;
-
-  width: 27px;
-  height: 35px;
-
-  background-image: url("../img/logo-html.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.logo-htmlacademy a:hover {
+  fill: rgba(255, 198, 0, 0.6);
 }
 
-.htmlacademy-image:hover::before {
-  opacity: 0.6;
-}
-
-.htmlacademy-image:active::before {
-  opacity: 0.3;
+.logo-htmlacademy a:active {
+  fill: rgba(255, 198, 0, 0.3);
 }
 
 /*Модальное окно*/
