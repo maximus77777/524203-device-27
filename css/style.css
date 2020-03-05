@@ -123,21 +123,14 @@ cursor: default;
 }
 
 .main-container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
-}
-
-.padding-container {
   padding: 0 20px;
 }
 
 /*Шапка*/
 
 .page-header {
-  padding: 0 20px;
-}
-
-.container-header {
   min-height: 226px;
 
   background-image: linear-gradient(to bottom, transparent 40px,
@@ -358,7 +351,7 @@ cursor: default;
 }
 
 .elem-menu .login-header {
-  margin-left: 104px;
+  margin-left: 107px;
 
   word-spacing: 2px;
 }
@@ -376,7 +369,7 @@ cursor: default;
 }
 
 .elem-menu .enter {
-  margin-left: 103px;
+  margin-left: 107px;
 }
 
 .elem-menu .compare {
@@ -528,11 +521,8 @@ cursor: default;
   position: relative;
 
   margin-bottom: 74px;
-}
 
-.slider-container {
-  background-image: linear-gradient(to bottom, rgba(240, 197, 46, 0.5),
-   rgba(240, 197, 46, 0.5) 113px, transparent 113px, transparent);
+  background-image: linear-gradient(to bottom, rgba(240, 197, 46, 0.5) 113px, transparent 113px);
 }
 
 .grid-slider {
@@ -648,7 +638,6 @@ cursor: default;
 
 .btn-slider {
   width: 220px;
-  margin-right: 176px;
   margin-bottom: 48px;
   padding-top: 7px;
   padding-left: 3px;
@@ -692,7 +681,7 @@ padding-bottom: 7px;
   top: 110%;
   right: 25%;
   margin-top: -255px;
-  margin-right: -32px;
+  margin-right: -207px;
 }
 
 .control-sliders label {
@@ -881,11 +870,9 @@ padding-bottom: 7px;
 /*Дополнительный слайдер*/
 
 .second-slider {
-  margin-bottom: 94px;
-}
-
-.background-second-slider {
   min-height: 388px;
+
+  margin-bottom: 94px;
 
   background-image: linear-gradient(180deg, transparent,
    transparent 100px, rgb(229, 229, 229) 100px, rgb(229, 229, 229) 388px);
@@ -1099,12 +1086,9 @@ padding-bottom: 7px;
   padding-top: 44px;
 }
 
-.about-us {
-  margin-right: 40px;
-}
-
 .grid-contacts {
   display: flex;
+  justify-content: space-between;
 
   margin-bottom: 81px;
 }
@@ -1944,7 +1928,6 @@ padding-bottom: 7px;
 /*Подвал*/
 
 .page-footer {
-  padding: 0 20px;
   min-height: 323px;
 
   background-color: rgb(70, 70, 70);

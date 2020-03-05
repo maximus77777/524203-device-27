@@ -7,8 +7,8 @@
     <link rel = "stylesheet" href = "css/style.css">
   </head>
   <body>
-    <header class = "page-header">
-      <div class = "main-container container-header">
+    <div class = "main-container">
+      <header class = "page-header">
         <div class = "container">
           <div class = "main-logo">
             <svg  width = "163" height = "35" viewBox = "0 0 163 35">
@@ -101,96 +101,92 @@
             </ul>
           </nav>
           <h1 class = visually-hidden>Магазин Девайс</h1>
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <main class = "page-main">
-      <div class = "padding-container">
+      <div class = "main-container">
         <section class = "slider">
-          <div class = "main-container slider-container">
-            <h2 class = visually-hidden>Реклама</h2>
-            <input class = "visually-hidden" type = "radio" name = "button" id = "control-1" checked>
-            <input class = "visually-hidden" type = "radio" name = "button" id = "control-2">
-            <input class = "visually-hidden" type = "radio" name = "button" id = "control-3">
-            <div class = "control-sliders">
-              <label class = "slider-controls-item--1" for = "control-1">Первый</label>
-              <label class = "slider-controls-item--2" for = "control-2">Второй</label>
-              <label class = "slider-controls-item--3" for = "control-3">Третий</label>
-            </div>
-            <ul class = "slide-list">
-              <li class = "slide-elem">
-                <div class = " grid-slider">
-                  <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Современная палка селфи">
-                  <div class = "slide-info">
-                    <h2 class = "visually-hidden">Рекламный блок</h2>
-                    <b class = "slider-title">Делай селфи, как Бен Стиллер!</b>
-                    <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
-                      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a class = "button btn-slider" href = "#">Подробнее</a>
-                    <table class = "text-table">
-                      <tr class = "text-value">
-                        <td>8,5 м</td>
-                        <td>5 кг</td>
-                        <td>Карбон</td>
-                      </tr>
-                      <tr class = "text-product">
-                        <td>Длина палки</td>
-                        <td>Вес палки</td>
-                        <td>Материал</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </li>
-              <li class = "slide-elem">
-                <div class = " grid-slider">
-                  <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет для похудения">
-                  <div class = "slide-info">
-                    <h2 class = "visually-hidden">Статья</h2>
-                    <b class = "slider-title">Худеем правильно!</b>
-                    <p class = "slider-text"> Мотивирующие фитнес-браслеты помогут найти в себе силы
-                      не пропускать занятия и соблюдать диету.
-                    </p>
-                    <a class = "button btn-slider" href = "#">Подробнее</a>
-                    <table class = "text-table">
-                      <tr class = "text-value">
-                        <td>48 часов</td>
-                      </tr>
-                      <tr class = "text-product">
-                        <td>Без подзарядки</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </li>
-              <li class = "slide-elem">
-                <div class = " grid-slider">
-                  <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Бесшумный квадрокоптер оснащен лазером">
-                  <div class = "slide-info">
-                    <h2 class = "visually-hidden">Статья</h2>
-                    <b class = "slider-title">Порхает как бабочка, жалит как пчела!</b>
-                    <p class = "slider-text"> Этот обычный, на первый взгляд, квадрокоптер оснащен
-                      мощным лазером, замаскированным под стандартную камеру.
-                    </p>
-                    <a class = "button btn-slider" href = "#">Подробнее</a>
-                    <table class = "text-table">
-                      <tr class = "text-value">
-                        <td>800 м</td>
-                        <td>50 м</td>
-                      </tr>
-                      <tr class = "text-product">
-                        <td>Дальность полета</td>
-                        <td>Радиус поражения</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </li>
-            </ul>
+          <h2 class = visually-hidden>Реклама</h2>
+          <input class = "visually-hidden" type = "radio" name = "button" id = "control-1" checked>
+          <input class = "visually-hidden" type = "radio" name = "button" id = "control-2">
+          <input class = "visually-hidden" type = "radio" name = "button" id = "control-3">
+          <div class = "control-sliders">
+            <label class = "slider-controls-item--1" for = "control-1">Первый</label>
+            <label class = "slider-controls-item--2" for = "control-2">Второй</label>
+            <label class = "slider-controls-item--3" for = "control-3">Третий</label>
           </div>
+          <ul class = "slide-list">
+            <li class = "slide-elem">
+              <div class = " grid-slider">
+                <img class = "slide-picture" src = "img/slider-1.png" width = "384" height = "486" alt = "Современная палка селфи">
+                <div class = "slide-info">
+                  <h2 class = "visually-hidden">Рекламный блок</h2>
+                  <b class = "slider-title">Делай селфи, как Бен Стиллер!</b>
+                  <p class = "slider-text"> Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a class = "button btn-slider" href = "#">Подробнее</a>
+                  <table class = "text-table">
+                    <tr class = "text-value">
+                      <td>8,5 м</td>
+                      <td>5 кг</td>
+                      <td>Карбон</td>
+                    </tr>
+                    <tr class = "text-product">
+                      <td>Длина палки</td>
+                      <td>Вес палки</td>
+                      <td>Материал</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class = "slide-elem">
+              <div class = " grid-slider">
+                <img class = "slide-picture" src = "img/slider-2.png" width = "345" height = "485" alt = "Фитнес-браслет для похудения">
+                <div class = "slide-info">
+                  <h2 class = "visually-hidden">Статья</h2>
+                  <b class = "slider-title">Худеем правильно!</b>
+                  <p class = "slider-text"> Мотивирующие фитнес-браслеты помогут найти в себе силы
+                    не пропускать занятия и соблюдать диету.
+                  </p>
+                  <a class = "button btn-slider" href = "#">Подробнее</a>
+                  <table class = "text-table">
+                    <tr class = "text-value">
+                      <td>48 часов</td>
+                    </tr>
+                    <tr class = "text-product">
+                      <td>Без подзарядки</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <li class = "slide-elem">
+              <div class = " grid-slider">
+                <img class = "slide-picture" src = "img/slider-3.png" width = "526" height = "334" alt = "Бесшумный квадрокоптер оснащен лазером">
+                <div class = "slide-info">
+                  <h2 class = "visually-hidden">Статья</h2>
+                  <b class = "slider-title">Порхает как бабочка, жалит как пчела!</b>
+                  <p class = "slider-text"> Этот обычный, на первый взгляд, квадрокоптер оснащен
+                    мощным лазером, замаскированным под стандартную камеру.
+                  </p>
+                  <a class = "button btn-slider" href = "#">Подробнее</a>
+                  <table class = "text-table">
+                    <tr class = "text-value">
+                      <td>800 м</td>
+                      <td>50 м</td>
+                    </tr>
+                    <tr class = "text-product">
+                      <td>Дальность полета</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class = "gadgets">
-          <div class = "main-container">
             <ul class = "list-gadgets">
               <li class = "gadget-elem">
                 <a href = "inner.html">
@@ -223,120 +219,113 @@
                 </a>
               </li>
             </ul>
-          </div>
         </section>
       </div>
       <section class = "second-slider">
-        <div class = "background-second-slider">
-          <div class = "padding-container">
-            <div class = "main-container">
-              <div class = "grid-second-slider">
-                <h3 class = visually-hidden>Услуги</h3>
-                <div class = "content-services">
-                  <input class = "visually-hidden" type = "radio" name = "second-button" id = "delivery" checked>
-                  <input class = "visually-hidden" type = "radio" name = "second-button" id = "warranty">
-                  <input class = "visually-hidden" type = "radio" name = "second-button" id = "сredit">
-                  <div class="buttons-container">
-                    <label class = "button toggle-item-1" for = "delivery">Доставка</label>
-                    <label class = "button toggle-item-2" for = "warranty">Гарантия</label>
-                    <label class = "button toggle-item-3" for = "сredit">Кредит</label>
-                  </div>
-                  <ul class = "list-second-slide">
-                    <li class = "elem-second-slide">
-                      <h3 class = "title-second-slide">Доставка</h3>
-                      <p>
-                        Мы с удовольствием доставим ваш товар прямо к вашему
-                        подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-                        поднимая его на ваш этаж.
-                      </p>
-                    </li>
-                    <li class = "elem-second-slide">
-                      <h3 class = "title-second-slide">Гарантия</h3>
-                      <p>
-                        Если из-за возгорания купленного у нас товара у вас сгорит
-                        дом — не переживайте, мы выдадим вам новый.<br>
-                        Товар, не дом, конечно же.
-                      </p>
-                    </li>
-                    <li class = "elem-second-slide">
-                      <h3 class = "title-second-slide">Кредит</h3>
-                      <p>
-                        Залезть в долговую яму стало проще! Кредитные консультанты
-                        подберут для вас наиболее выгодные условия кредита.
-                        Выгодные для нашего банка, разумеется.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+        <div class = "main-container">
+          <div class = "grid-second-slider">
+            <h3 class = visually-hidden>Услуги</h3>
+            <div class = "content-services">
+              <input class = "visually-hidden" type = "radio" name = "second-button" id = "delivery" checked>
+              <input class = "visually-hidden" type = "radio" name = "second-button" id = "warranty">
+              <input class = "visually-hidden" type = "radio" name = "second-button" id = "сredit">
+              <div class="buttons-container">
+                <label class = "button toggle-item-1" for = "delivery">Доставка</label>
+                <label class = "button toggle-item-2" for = "warranty">Гарантия</label>
+                <label class = "button toggle-item-3" for = "сredit">Кредит</label>
               </div>
+              <ul class = "list-second-slide">
+                <li class = "elem-second-slide">
+                  <h3 class = "title-second-slide">Доставка</h3>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо к вашему
+                    подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                    поднимая его на ваш этаж.
+                  </p>
+                </li>
+                <li class = "elem-second-slide">
+                  <h3 class = "title-second-slide">Гарантия</h3>
+                  <p>
+                    Если из-за возгорания купленного у нас товара у вас сгорит
+                    дом — не переживайте, мы выдадим вам новый.<br>
+                    Товар, не дом, конечно же.
+                  </p>
+                </li>
+                <li class = "elem-second-slide">
+                  <h3 class = "title-second-slide">Кредит</h3>
+                  <p>
+                    Залезть в долговую яму стало проще! Кредитные консультанты
+                    подберут для вас наиболее выгодные условия кредита.
+                    Выгодные для нашего банка, разумеется.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <div class = "padding-container">
-        <div class = "main-container">
-          <section class = "company">
-            <h3 class = visually-hidden>Виды логотипов Компаний</h3>
-            <ul class = "list-company">
-              <li class = "company-elem">
-                <a href = "#">
-                  <img src = "img/logo-1.png" width = "260"
-                    height = "100" alt = "логотип компании Dj">
-                </a>
-              </li>
-              <li class = "company-elem">
-                <a href = "#">
-                  <img src = "img/logo-2.png" width = "260"
-                    height = "100" alt = "логотип компании sp-Gadgets">
-                </a>
-              </li>
-              <li class = "company-elem">
-                <a href = "#">
-                  <img src = "img/logo-3.png" width = "260"
-                    height = "100" alt = "логотип компании GoPro">
-                </a>
-              </li>
-              <li class = "company-elem">
-                <a href = "#">
-                  <img src = "img/logo-4.png" width = "260"
-                    height = "100" alt = "логотип компании vive">
-                </a>
-              </li>
+      <div class = "main-container">
+        <section class = "company">
+          <h3 class = visually-hidden>Виды логотипов Компаний</h3>
+          <ul class = "list-company">
+            <li class = "company-elem">
+              <a href = "#">
+                <img src = "img/logo-1.png" width = "260"
+                  height = "100" alt = "логотип компании Dj">
+              </a>
+            </li>
+            <li class = "company-elem">
+              <a href = "#">
+                <img src = "img/logo-2.png" width = "260"
+                  height = "100" alt = "логотип компании sp-Gadgets">
+              </a>
+            </li>
+            <li class = "company-elem">
+              <a href = "#">
+                <img src = "img/logo-3.png" width = "260"
+                  height = "100" alt = "логотип компании GoPro">
+              </a>
+            </li>
+            <li class = "company-elem">
+              <a href = "#">
+                <img src = "img/logo-4.png" width = "260"
+                  height = "100" alt = "логотип компании vive">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class = "grid-contacts">
+          <section class = "about-us">
+            <h2 class = "title-contacts">О нас</h2>
+            <p class = "text-contacts">
+              Огромный выбор гаджетов не оставит равнодушным гика,
+              который есть в каждом из нас.
+            </p>
+            <p class = "text-contacts">
+              Мы можем доставить ваш товар в самые отдаленные точки России!
+              DEVICE работает со многими транспортными компаниями:
+            </p>
+            <ul class = "list-contacts">
+              <li class = "elem-contacts">Деловые Линии</li>
+              <li class = "elem-contacts">Автотрейдинг</li>
+              <li class = "elem-contacts">ЖелДорЭкспедиция</li>
             </ul>
+            <a class = "button btn-about-us" href = "#">Подробнее о нас</a>
           </section>
-          <div class = "grid-contacts">
-            <section class = "about-us">
-              <h2 class = "title-contacts">О нас</h2>
-              <p class = "text-contacts">
-                Огромный выбор гаджетов не оставит равнодушным гика,
-                который есть в каждом из нас.
-              </p>
-              <p class = "text-contacts">
-                Мы можем доставить ваш товар в самые отдаленные точки России!
-                DEVICE работает со многими транспортными компаниями:
-              </p>
-              <ul class = "list-contacts">
-                <li class = "elem-contacts">Деловые Линии</li>
-                <li class = "elem-contacts">Автотрейдинг</li>
-                <li class = "elem-contacts">ЖелДорЭкспедиция</li>
-              </ul>
-              <a class = "button btn-about-us" href = "#">Подробнее о нас</a>
-            </section>
-            <section class = "contacts">
-              <h2 class = "title-contacts">Контакты</h2>
-              <p class = "text-contacts">
-                Вы можете забрать товар сами, заехав в наш офис. Заодно,
-                вы сможете проверить работоспособность покупки. Всякое бывает.
-              </p>
-              <figure class = "map">
-                <a href = "#">
-                  <img class = "map-image" src = "img/map.png" width = "560"
-                    height = "222" alt = "Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                </a>
-              </figure>
-              <button class = "button btn-contacts" type = "button">Напишите нам</button>
-            </section>
-          </div>
+          <section class = "contacts">
+            <h2 class = "title-contacts">Контакты</h2>
+            <p class = "text-contacts">
+              Вы можете забрать товар сами, заехав в наш офис. Заодно,
+              вы сможете проверить работоспособность покупки. Всякое бывает.
+            </p>
+            <figure class = "map">
+              <a href = "#">
+                <img class = "map-image" src = "img/map.png" width = "560"
+                  height = "222" alt = "Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+              </a>
+            </figure>
+            <button class = "button btn-contacts" type = "button">Напишите нам</button>
+          </section>
         </div>
       </div>
     </main>
