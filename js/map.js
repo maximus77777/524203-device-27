@@ -1,22 +1,22 @@
 
-var link = document.querySelector('.map a');
+var link = document.querySelector(".map a");
 
-var map = document.querySelector('.modal-map');
-var close = map.querySelector('.close-modal');
+var map = document.querySelector(".modal-map");
+var close = map.querySelector(".close-modal");
 
 
 
-link.addEventListener('click', function(evt) {
+link.addEventListener("click", function(evt) {
   evt.preventDefault();
-  map.classList.add('modal-show');
+  map.classList.add("modal-show");
 });
 
-close.addEventListener('click', function(evt) {
+close.addEventListener("click", function(evt) {
   evt.preventDefault();
-  map.classList.remove('modal-show');
+  map.classList.remove("modal-show");
 });
 
-window.addEventListener('keydown', function(evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (map.classList.contains("modal-show")) {

@@ -1,43 +1,43 @@
 
-var link = document.querySelector('.btn-contacts');
+var link = document.querySelector(".btn-contacts");
 
-var popup = document.querySelector('.modal-login');
-var close = popup.querySelector('.close-modal');
+var popup = document.querySelector(".modal-login");
+var close = popup.querySelector(".close-modal");
 
-var form = popup.querySelector('form');
-var login = popup.querySelector('input[name = "username"]');
-var email = popup.querySelector('input[name = "email"]');
-var text = popup.querySelector('textarea[name = "textmail"]');
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name = username]");
+var email = popup.querySelector("[name = email]");
+var text = popup.querySelector("[name = textmail]");
 
 var isStorageSupport = true;
   var storage = "";
 
   try {
-    storage = localStorage.getItem("username");
+    storage = localStorage.getItem("login");
   } catch (err) {
     isStorageSupport = false;
   }
 
-  link.addEventListener('click', function(evt) {
+  link.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup.classList.add('modal-show');
+    popup.classList.add("modal-show");
 
     if (storage) {
-      username.value = storage;
-      email.focus();
-    } else {
-      username.focus();
+      login.value = storage
+        email.focus();
+      } else {
+        login.focus();
     }
   });
 
-  close.addEventListener('click', function(evt) {
+  close.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
   });
 
   form.addEventListener("submit", function (evt) {
-    if (!username.value || !email.value || !text.value) {
+    if (!login.value || !email.value || !text.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
@@ -48,12 +48,12 @@ var isStorageSupport = true;
     }
     else {
       if (isStorageSupport) {
-          localStorage.setItem("username", username.value);
+          localStorage.setItem("login", login.value);
         }
       }
   });
 
-  window.addEventListener('keydown', function(evt) {
+  window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
