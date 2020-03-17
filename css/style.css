@@ -140,7 +140,7 @@ input[type="radio"].visually-hidden {
   width: 163px;
   height: 35px;
   padding-top: 23px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .link-logo {
@@ -149,11 +149,12 @@ input[type="radio"].visually-hidden {
 }
 
 .link-logo:hover {
-  opacity: 0.6;
+  fill-opacity: 0.6;
 }
 
-.link-logo:active {
-  opacity: 0.3;
+.link-logo svg:active,
+.link-logo path:active {
+  fill-opacity: 0.3;
 }
 
 .list-menu,
@@ -192,8 +193,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search-cite {
-  width: 355px;
-  height: 49px;
+  width: 170px;
+  height: 50px;
+  margin-right: 185px;
   padding-left: 40px;
 
   font: inherit;
@@ -212,8 +214,9 @@ input[type="radio"].visually-hidden {
 
 .search-cite:focus {
   width: 355px;
-  height: 49px;
+  height: 50px;
   padding-left: 40px;
+  margin-right: 0;
 
   outline: none;
   border-bottom: 2px solid rgb(0, 0, 0);
@@ -333,16 +336,20 @@ input[type="radio"].visually-hidden {
 }
 
 .elem-menu svg {
-  margin-right: 10px;
+  position: absolute;
+
+  top: 5px;
+  left: 0;
+
+  z-index: -1;
 }
 
 .elem-menu:nth-child(3) svg {
-  margin-right: 7px;
+  left: 5px;
 }
 
-.elem-menu:nth-child(4) svg,
-.elem-menu:nth-child(5) svg {
-  margin-right: 7px;
+.elem-menu:nth-child(4) svg {
+  left: 3px;
 }
 
 .elem-menu .login-header {
@@ -351,16 +358,12 @@ input[type="radio"].visually-hidden {
   word-spacing: 2px;
 }
 
-.login-header svg {
-  margin-right: 8px;
-}
-
 .elem-menu .active-exit {
-  margin-left: 20px;
+  margin-left: 21px;
 }
 
 .elem-menu .inner-compare {
-  margin-left: 65px;
+  margin-left: 61px;
 }
 
 .elem-menu .enter {
@@ -368,15 +371,21 @@ input[type="radio"].visually-hidden {
 }
 
 .elem-menu .compare {
-  margin-left: 218px;
+  margin-left: 214px;
 }
 
 .elem-menu .cart {
-  margin-left: 40px;
+  margin-left: 39px;
 }
 
 .link {
+  position: relative;
+
+  padding-left: 25px;
+
   color:inherit;
+
+  z-index: 2;
 }
 
 .active-exit {
@@ -466,9 +475,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1160px;
-  min-height: 129px;
+  min-height: 161px;
   margin-left: -60px;
-  padding-bottom: 3px;
 
   list-style: none;
 
@@ -635,8 +643,8 @@ input[type="radio"].visually-hidden {
 .btn-slider {
   width: 220px;
   margin-bottom: 48px;
-  padding-top: 7px;
-  padding-left: 3px;
+  padding-top: 8px;
+  padding-left: 5px;
 }
 
 .text-table {
@@ -769,12 +777,6 @@ padding-bottom: 7px;
   display: flex;
   position: relative;
 
-  background-image: linear-gradient(to bottom,rgba(240, 197, 46, 0.5) 160px, transparent 160px);
-}
-
-.gadget-elem span {
-  margin: 0;
-  padding: 0;
   padding-top: 194px;
 
   font-family: "Gilroy", "Arial", sans-serif;
@@ -782,17 +784,21 @@ padding-bottom: 7px;
   line-height: 24px;
   font-weight: 800;
   color: rgb(0, 0, 0);
+  background-image: linear-gradient(to bottom,rgba(240, 197, 46, 0.5) 160px, transparent 160px);
 }
 
-.gadget-elem:nth-child(2) span {
-  width: 100px;
+.gadget-elem:nth-child(2) a {
+  padding-right: 70px;
 }
 
 .gadget-elem a:hover {
-  background-image: linear-gradient(to bottom,rgba(240, 197, 46) 160px, transparent 160px);
+  background-image: linear-gradient(to bottom,rgb(240, 197, 46) 160px, transparent 160px);
 }
 
-.gadget-elem a:active > span,
+.gadget-elem a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .gadget-elem a:active::before {
   opacity: 0.3;
 }
@@ -1973,6 +1979,16 @@ outline: 1px dashed rgba(0, 0, 0, 0.5);
   padding-left: 510px;
 }
 
+.link-second-list,
+.second-list,
+.social-list,
+.list-footer {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 /*Логотип подвала*/
 
 .logo-device use {
@@ -1989,7 +2005,8 @@ outline: 1px dashed rgba(0, 0, 0, 0.5);
   fill-opacity: 0.6;
 }
 
-.logo-device:active {
+.logo-device svg:active,
+.logo-device use:active {
   fill-opacity: 0.3;
 }
 
@@ -2014,100 +2031,97 @@ outline: 1px dashed rgba(0, 0, 0, 0.5);
 .second-list {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 
   width: 340px;
+  padding-left: 15px;
 }
 
 .link-second-list {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 
   width: 477px;
 }
 
-.second-active-elem svg {
-  margin-right: 7px;
-}
+.second-login,
+.second-link {
+  position: relative;
 
-.second-elem:nth-child(3n) a {
-  margin-right: 0;
-}
+  padding-left: 28px;
 
-.second-elem .second-enter {
-  margin-left: 15px;
-}
-
-.second-elem .second-compare {
-  margin-left: 43px;
-}
-
-.second-elem .second-cart {
-  margin-left: 40px;
-}
-
-.second-elem svg {
-  margin-right: 10px;
-}
-
-.second-elem:nth-child(2n) svg {
-  margin-right: 7px;
-}
-
-.second-elem:nth-child(3n) svg,
-.second-elem:nth-child(4n) svg {
-  margin-right: 7px;
-}
-
-.second-enter-active {
-  margin-left: 21px;
-}
-
-.second-login-active {
   color: rgba(255, 255, 255, 0.7);
+
+  fill: rgb(255, 198, 0);
+
+  z-index: 1;
+}
+
+.second-elem-active {
+  margin-right: 17px;
+
   word-spacing: 2px;
 }
 
+.second-elem-active svg {
+  position: absolute;
+
+  top: 4px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.second-elem svg {
+  position: absolute;
+
+  top: 4px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.second-compare svg {
+  top: 6px;
+}
+
+.second-elem {
+  margin-right: 43px;
+}
+
+.second-list .second-elem:nth-child(3n),
+.link-second-list .second-elem:nth-child(4n) {
+  margin-right: 0;
+}
+
+.second-enter,
+.second-compare,
+.second-cart {
+  padding-left: 21px;
+}
+
 .second-enter {
-  color: rgba(255, 255, 255, 0.7);
-
-  fill: rgb(255, 198, 0);
+  padding-left: 26px;
 }
 
-.second-login-active {
-  fill: rgb(255, 198, 0);
+.second-enter-active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.second-login-active:hover,
-.second-enter:hover {
+.second-login:hover,
+.second-link:hover {
   color: rgb(255, 255, 255);
 
   fill-opacity: 0.6;
 }
 
-.second-login-active:active,
-.second-enter:active {
+.second-login:active,
+.second-link:active {
   color: rgba(255, 255, 255, 0.3);
 
   fill-opacity: 0.3;
 }
 
-.second-enter-active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 /*Навигационное меню подвала*/
-
-.link-second-list,
-.second-list,
-.social-list,
-.list-footer {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
 
 .elem-footer a {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -2179,20 +2193,22 @@ outline: 1px dashed rgba(0, 0, 0, 0.5);
 .social-facebook,
 .social-instagram,
 .social-twitter {
-  fill: rgb(255, 255, 255);
-  opacity: 0.3;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social-facebook:hover,
 .social-instagram:hover,
 .social-twitter:hover {
-  opacity: 0.6;
+  fill-opacity: 0.6;
 }
 
-.social-facebook:active,
-.social-instagram:active,
-.social-twitter:active {
-  opacity: 0.1;
+.social-facebook path:active,
+.social-facebook svg:active,
+.social-instagram path:active,
+.social-instagram svg:active,
+.social-twitter path:active,
+.social-twitter svg:active {
+  fill-opacity: 0.1;
 }
 
 .logo-htmlacademy {
@@ -2202,11 +2218,12 @@ outline: 1px dashed rgba(0, 0, 0, 0.5);
 }
 
 .logo-htmlacademy:hover {
-  fill: rgba(255, 198, 0, 0.6);
+  fill-opacity: 0.6;
 }
 
-.logo-htmlacademy:active {
-  fill: rgba(255, 198, 0, 0.3);
+.logo-htmlacademy path:active,
+.logo-htmlacademy svg:active {
+  fill-opacity: 0.3;
 }
 
 /*Модальное окно*/
